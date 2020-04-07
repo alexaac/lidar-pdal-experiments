@@ -11,11 +11,11 @@
 This repo hosts the code examples.
 
 The articles can be found at:
-* [LiDAR PDAL Experiments – Dublin](https://blog.maptheclouds.com/learning/lidar-pdal-experiments-dublin)
-* [LiDAR PDAL Experiments – Yosemite Valley](https://blog.maptheclouds.com/learning/lidar-pdal-experiments-yosemite-valley)
-* [LiDAR PDAL Experiments – Taal Volcano](https://blog.maptheclouds.com/learning/lidar-pdal-experiments)
+* [LiDAR PDAL Experiments – Dublin](https://blog.maptheclouds.com/learning/lidar-pdal-experiments-dublin){:target="_blank"}
+* [LiDAR PDAL Experiments – Yosemite Valley](https://blog.maptheclouds.com/learning/lidar-pdal-experiments-yosemite-valley){:target="_blank"}
+* [LiDAR PDAL Experiments – Taal Volcano](https://blog.maptheclouds.com/learning/lidar-pdal-experiments){:target="_blank"}
 
 You can play with the point clouds at:
-* [ept_dublin_colored](https://potree.entwine.io/data/view.html?r="https://maptheclouds.com/ept_dublin_colored/")
-* [ept_yose_colored](https://potree.entwine.io/data/view.html?r="https://maptheclouds.com/ept_yose_colored/")
-* [Taal_Volcano_Island(UP TCAGP and PHIL-LiDAR Program)](https://potree.entwine.io/data/view.html?r="https://phil-lidar-taal-entwine-s3.s3.us-east-2.amazonaws.com/Taal_Volcano_Island/")
+* [ept_dublin_colored](https://potree.entwine.io/data/view.html?r="https://maptheclouds.com/ept_dublin_colored/"){:target="_blank"}
+* [ept_yose_colored](https://potree.entwine.io/data/view.html?r="https://maptheclouds.com/ept_yose_colored/"){:target="_blank"}
+* [Taal_Volcano_Island(UP TCAGP and PHIL-LiDAR Program)](https://potree.entwine.io/data/view.html?r="https://phil-lidar-taal-entwine-s3.s3.us-east-2.amazonaws.com/Taal_Volcano_Island/"){:target="_blank"}
