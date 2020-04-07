@@ -16,6 +16,6 @@ The articles can be found at:
 * [LiDAR PDAL Experiments – Taal Volcano](https://blog.maptheclouds.com/learning/lidar-pdal-experiments)
 
 You can play with the point clouds at:
-* https://potree.entwine.io/data/view.html?r="https://maptheclouds.com/ept_dublin_colored/"
-* https://potree.entwine.io/data/view.html?r="https://maptheclouds.com/ept_yose_colored/"
-* https://potree.entwine.io/data/view.html?r="https://phil-lidar-taal-entwine-s3.s3.us-east-2.amazonaws.com/Taal_Volcano_Island/"
+* [ept_dublin_colored](https://potree.entwine.io/data/view.html?r="https://maptheclouds.com/ept_dublin_colored/")
+* [ept_yose_colored](https://potree.entwine.io/data/view.html?r="https://maptheclouds.com/ept_yose_colored/")
+* [Taal_Volcano_Island](https://potree.entwine.io/data/view.html?r="https://phil-lidar-taal-entwine-s3.s3.us-east-2.amazonaws.com/Taal_Volcano_Island/")
