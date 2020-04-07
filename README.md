@@ -6,7 +6,7 @@
 
 <p>This is an adaptation of the original workshop from the PDAL website, <a href="https://pdal.io/workshop/index.html">Point Cloud Processing and Analysis with PDAL</a>, the single difference being that I use the same data for every operation and show the commands output, too, while in the workshop there are used different data sources.</p>
 
-<p>The workshop can be downloaded from <a href="https://pdal.s3.amazonaws.com/workshop/PDAL-workshop.pdf">here</a>, too.<br>The colored point cloud data that we will be using throughout this post can be viewed here: <a href="https://potree.entwine.io/data/view.html?r=&quot;https://maptheclouds.com/ept_yose_colored/&quot;">https://potree.entwine.io/data/view.html?r="https://maptheclouds.com/ept_dublin_colored/"</a>.</p>
+<p>The workshop can be downloaded from <a href="https://pdal.s3.amazonaws.com/workshop/PDAL-workshop.pdf">here</a>, too.</p>
 
 This repo hosts the code examples.
 
