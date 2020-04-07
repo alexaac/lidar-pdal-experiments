@@ -1,0 +1,35 @@
+Output
+(new_clouds) myuser@comp:~/phili$ conda install --name new_clouds --channel conda-forge entwine
+Collecting package metadata (current_repodata.json): done
+Solving environment: done
+
+## Package Plan ##
+
+  environment location: /home/myuser/anaconda3/envs/new_clouds
+
+  added / updated specs:
+    - entwine
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    entwine-2.1.0              |       hb51ef68_2         1.1 MB  conda-forge
+    ------------------------------------------------------------
+                                           Total:         1.1 MB
+
+The following NEW packages will be INSTALLED:
+
+  entwine            conda-forge/linux-64::entwine-2.1.0-hb51ef68_2
+
+
+Proceed ([y]/n)? y
+
+
+Downloading and Extracting Packages
+entwine-2.1.0        | 1.1 MB    | ################################################################################################### | 100% 
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+(new_clouds) myuser@comp:~/phili$

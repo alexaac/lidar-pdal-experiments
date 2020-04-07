@@ -1,0 +1,30 @@
+(new_clouds) myuser@comp:~/phili$ tree -L 1
+.
+├── entwine.json
+├── ept_phili
+├── hexbin-out.json
+├── hexbin-pipeline.json
+├── raw_data
+└── temp_data
+
+3 directories, 3 files
+(new_clouds) myuser@comp:~/phili$ pdal info --boundary temp_data/ept_phili_to_laz.laz
+{
+  "boundary":
+  {
+    "area": 72703609.64,
+    "avg_pt_per_sq_unit": 28.76052946,
+    "avg_pt_spacing": 2.974793047,
+    "boundary": "POLYGON ((284777.03 1544717.6,287831.19 1547362.6,287067.65 1556620.0,277905.18 1551330.1,280959.33 1546040.1,284777.03 1544717.6))",
+    "boundary_json": { "type": "Polygon", "coordinates": [ [ [ 284777.030648400017526, 1544717.607343849958852 ], [ 287831.188054799975362, 1547362.585245609981939 ], [ 287067.648703199985903, 1556620.007901760051027 ], [ 277905.17648399999598, 1551330.052098240004852 ], [ 280959.333890400012024, 1546040.096294729970396 ], [ 284777.030648400017526, 1544717.607343849958852 ] ] ] },
+    "density": 0.1130020922,
+    "edge_length": 0,
+    "estimated_edge": 2644.977902,
+    "hex_offsets": "MULTIPOINT (0 0, -763.539 1322.49, 0 2644.98, 1527.08 2644.98, 2290.62 1322.49, 1527.08 0)",
+    "sample_size": 5000,
+    "threshold": 15
+  },
+  "filename": "temp_data/ept_phili_to_laz.laz",
+  "pdal_version": "2.0.1 (git-version: 6600e6)"
+}
+(new_clouds) myuser@comp:~/phili$

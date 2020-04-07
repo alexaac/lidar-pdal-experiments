@@ -1,0 +1,12 @@
+[...]
+myuser@comp:~/dublin/imagery$ unzip \*.zip
+Archive:  nyu_2451_38595_orthophoto_T_315000_234000.zip
+   creating: nyu_2451_38595_rgbi/
+  inflating: nyu_2451_38595_rgbi/315000_234000.tfw  
+  inflating: nyu_2451_38595_rgbi/315000_234000.tif  
+
+[...] 
+
+6 archives were successfully processed.
+myuser@comp:~/dublin/imagery$ rm *.zip
+myuser@comp:~/dublin/imagery$

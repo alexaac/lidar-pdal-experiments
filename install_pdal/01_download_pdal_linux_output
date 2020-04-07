@@ -1,0 +1,18 @@
+Output
+[...]
+==> For changes to take effect, close and re-open your current shell. <==
+
+If you'd prefer that conda's base environment not be activated on startup, 
+   set the auto_activate_base parameter to false: 
+
+conda config --set auto_activate_base false
+
+Thank you for installing Anaconda3!
+
+===========================================================================
+
+Anaconda and JetBrains are working together to bring you Anaconda-powered
+environments tightly integrated in the PyCharm IDE.
+
+PyCharm for Anaconda is available at:
+https://www.anaconda.com/pycharm

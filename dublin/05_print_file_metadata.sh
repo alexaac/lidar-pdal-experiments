@@ -1,0 +1,1 @@
+pdal info raw_data/T_315000_233500.laz --metadata

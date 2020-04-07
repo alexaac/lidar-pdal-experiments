@@ -1,0 +1,1 @@
+conda install --name new_clouds --channel conda-forge entwine

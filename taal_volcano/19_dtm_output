@@ -1,0 +1,16 @@
+(new_clouds) myuser@comp:~/phili$ pdal pipeline dtm.json
+(new_clouds) myuser@comp:~/phili$ tree temp_data/
+temp_data/
+├── boundary.sqlite
+├── clean.laz
+├── denoised_ground.laz
+├── density.sqlite
+├── dtm.tif
+├── E280N1553_LAZ_PL1.las
+├── E280N1553_LAZ_PL1_WGS.laz
+├── ept_phili_to_laz.laz
+├── ground.laz
+└── thin.laz
+
+0 directories, 10 files
+(new_clouds) myuser@comp:~/phili$

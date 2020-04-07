@@ -1,0 +1,1 @@
+pdal info raw_data/E280N1553_LAZ_PL1.laz --metadata

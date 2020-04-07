@@ -1,0 +1,16 @@
+{
+    "pipeline": [
+        {
+            "type": "readers.ept",
+            "filename":"ept_yose",
+            "resolution": 5
+        },
+        {
+            "type": "writers.las",
+            "compression": "true",
+            "minor_version": "2",
+            "dataformat_id": "0",
+            "filename":"temp_data/ept_yose_to_laz.laz"
+        }
+    ]
+}

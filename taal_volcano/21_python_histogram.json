@@ -1,0 +1,17 @@
+{
+    "pipeline": [
+        {
+            "filename": "temp_data/ept_phili_to_laz.laz"
+        },
+        {
+            "type": "filters.python",
+            "function": "make_plot",
+            "module": "anything",
+            "pdalargs": "{\"filename\":\"temp_data/histogram.png\"}",
+            "script": "histogram.py"
+        },
+        {
+            "type": "writers.null"
+        }
+    ]
+}

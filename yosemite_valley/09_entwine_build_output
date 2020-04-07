@@ -1,0 +1,68 @@
+(new_clouds) myuser@comp:~/yose$ entwine build -i raw_data/*.laz -o ept_yose --srs "EPSG:26911"
+Scanning input
+1/4: raw_data/points_extra_yose.laz
+2/4: raw_data/points_little_yose.laz
+3/4: raw_data/points_rockfall_1.laz
+4/4: raw_data/points_rockfall_2.laz
+
+Entwine Version: 2.1.0
+EPT Version: 1.0.0
+Input:
+	Files: 4
+	Total points: 570,495,333
+	Density estimate (per square unit): 2.14675
+	Threads: [3, 5]
+Output:
+	Path: ept_yose/
+	Data type: laszip
+	Hierarchy type: json
+	Sleep count: 2,097,152
+	Scale: 0.01
+	Offset: (273845, 4179692, 1924)
+Metadata:
+	SRS: EPSG:26911
+	Bounds: [(262472, 4174883, 747), (285219, 4184500, 3101)]
+	Cube: [(262471, 4168317, -9451), (285221, 4191067, 13299)]
+	Storing dimensions: [
+                X:int32, Y:int32, Z:int32, Intensity:uint16, ReturnNumber:uint8,
+                NumberOfReturns:uint8, ScanDirectionFlag:uint8,
+                EdgeOfFlightLine:uint8, Classification:uint8, ScanAngleRank:float,
+                UserData:uint8, PointSourceId:uint16, GpsTime:double, Red:uint16,
+                Green:uint16, Blue:uint16, OriginId:uint32
+	]
+Build parameters:
+	Span: 128
+	Resolution 2D: 128 * 128 = 16,384
+	Resolution 3D: 128 * 128 * 128 = 2,097,152
+	Maximum node size: 65,536
+	Minimum node size: 16,384
+	Cache size: 64
+
+Adding 0 - raw_data/points_extra_yose.laz
+Adding 1 - raw_data/points_little_yose.laz
+Adding 2 - raw_data/points_rockfall_1.laz
+Adding 3 - raw_data/points_rockfall_2.laz
+	Pushes complete - joining...
+00:10 - 3% - 16,805,888 - 6,050(6,050)M/h - 47W - 0R - 411A
+00:20 - 5% - 30,949,376 - 5,570(5,091)M/h - 345W - 64R - 453A
+00:30 - 8% - 44,695,552 - 5,363(4,948)M/h - 339W - 42R - 502A
+00:40 - 10% - 55,943,168 - 5,034(4,049)M/h - 410W - 105R - 461A
+00:50 - 12% - 68,812,800 - 4,954(4,633)M/h - 438W - 70R - 429A
+01:00 - 14% - 79,781,888 - 4,786(3,948)M/h - 297W - 160R - 565A
+	Done 1
+01:10 - 16% - 89,364,226 - 4,595(3,449)M/h - 432W - 105R - 437A
+01:20 - 18% - 100,562,690 - 4,525(4,031)M/h - 241W - 80R - 537A
+[...]
+18:40 - 98% - 561,742,971 - 1,805(470)M/h - 662W - 11R - 288A
+18:50 - 99% - 564,921,467 - 1,799(1,144)M/h - 108W - 61R - 298A
+19:00 - 100% - 569,181,307 - 1,797(1,533)M/h - 96W - 22R - 313A
+19:10 - 100% - 570,495,333 - 1,785(473)M/h - 284W - 91R - 157A
+	Done 0
+Reawakened: 14846
+Saving registry...
+Saving metadata...
+
+Index completed in 19:12.
+Save complete.
+	Points inserted: 570,495,333
+(new_clouds) myuser@comp:~/yose

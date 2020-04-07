@@ -1,0 +1,45 @@
+(new_clouds) myuser@comp:~/dublin$ pdal translate raw_data/T_315000_233500.laz \
+>     temp_data/T_315000_233500_wgs84.laz reprojection \
+>     --filters.reprojection.in_srs="EPSG:29902" \
+>     --filters.reprojection.out_srs="EPSG:4326"
+proj_create_from_database: datum not found
+proj_create_from_database: ellipsoid not found
+proj_create_from_database: prime meridian not found
+(new_clouds) myuser@comp:~/dublin$ pdal info temp_data/T_315000_233500_wgs84.laz --all | jq .stats.bbox.native.bbox
+{
+  "maxx": -6.27,
+  "maxy": 53.34,
+  "maxz": 361.18,
+  "minx": -6.27,
+  "miny": 53.34,
+  "minz": -93.25
+}
+(new_clouds) myuser@comp:~/dublin$ pdal info temp_data/T_315000_233500_wgs84.laz -p 0
+{
+  "filename": "temp_data/T_315000_233500_wgs84.laz",
+  "pdal_version": "2.0.1 (git-version: 6600e6)",
+  "points":
+  {
+    "point":
+    {
+      "Blue": 0,
+      "Classification": 4,
+      "EdgeOfFlightLine": 0,
+      "GpsTime": 388567.0446,
+      "Green": 0,
+      "Intensity": 8,
+      "NumberOfReturns": 2,
+      "PointId": 0,
+      "PointSourceId": 0,
+      "Red": 0,
+      "ReturnNumber": 2,
+      "ScanAngleRank": 30,
+      "ScanDirectionFlag": 1,
+      "UserData": 0,
+      "X": -6.27,
+      "Y": 53.34,
+      "Z": -61.81
+    }
+  }
+}
+(new_clouds) myuser@comp:~/dublin$

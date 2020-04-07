@@ -1,0 +1,16 @@
+(new_clouds) myuser@comp:~/yose$ pdal translate raw_data/points_little_yose.laz \
+>     temp_data/thin.laz \
+>     sample --filters.sample.radius=20
+(new_clouds) myuser@comp:~/yose$ tree temp_data/
+temp_data/
+├── boundary2.sqlite
+├── boundary.sqlite
+├── clean.laz
+├── density.sqlite
+├── ept_yose_cropped.laz
+├── ept_yose_to_laz.laz
+├── points_little_yose_wgs84.laz
+└── thin.laz
+
+0 directories, 8 files
+(new_clouds) myuser@comp:~/yose$

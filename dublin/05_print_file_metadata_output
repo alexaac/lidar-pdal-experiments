@@ -1,0 +1,87 @@
+(new_clouds) myuser@comp:~/dublin$ pdal info raw_data/T_315000_233500.laz --metadata
+proj_create_from_database: datum not found
+proj_create_from_database: ellipsoid not found
+proj_create_from_database: prime meridian not found
+{
+  "filename": "raw_data/T_315000_233500.laz",
+  "metadata":
+  {
+    "comp_spatialreference": "COMPD_CS[\"DAT1965, AiryMod1849, TM65 / Irish Grid\",PROJCS[\"TM65 / Irish Grid\",GEOGCS[\"DAT1965, AiryMod1849\",DATUM[\"unnamed\",SPHEROID[\"unnamed\",6377340.189,299.324964599999]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",53.5],PARAMETER[\"central_meridian\",-8],PARAMETER[\"scale_factor\",1.000035],PARAMETER[\"false_easting\",200000.32],PARAMETER[\"false_northing\",250000.08],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]],VERT_CS[\"unknown\",VERT_DATUM[\"unknown\",2005],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Up\",UP]]]",
+    "compressed": true,
+    "count": 89824621,
+    "creation_doy": 237,
+    "creation_year": 2015,
+    "dataformat_id": 1,
+    "dataoffset": 840,
+    "filesource_id": 0,
+    "global_encoding": 0,
+    "global_encoding_base64": "AAA=",
+    "header_size": 227,
+    "major_version": 1,
+    "maxx": 315499.999,
+    "maxy": 233999.999,
+    "maxz": 361.183,
+    "minor_version": 2,
+    "minx": 315000,
+    "miny": 233500,
+    "minz": -93.254,
+    "offset_x": 314000,
+    "offset_y": 230000,
+    "offset_z": 0,
+    "point_length": 28,
+    "project_id": "76B01A0C-C5F9-2A4A-8E10-D3CBC357250B",
+    "scale_x": 0.001,
+    "scale_y": 0.001,
+    "scale_z": 0.001,
+    "software_id": "LAStools, FME Desktop, UMGPC",
+    "spatialreference": "COMPD_CS[\"DAT1965, AiryMod1849, TM65 / Irish Grid\",PROJCS[\"TM65 / Irish Grid\",GEOGCS[\"DAT1965, AiryMod1849\",DATUM[\"unnamed\",SPHEROID[\"unnamed\",6377340.189,299.324964599999]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",53.5],PARAMETER[\"central_meridian\",-8],PARAMETER[\"scale_factor\",1.000035],PARAMETER[\"false_easting\",200000.32],PARAMETER[\"false_northing\",250000.08],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]],VERT_CS[\"unknown\",VERT_DATUM[\"unknown\",2005],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Up\",UP]]]",
+    "srs":
+    {
+      "compoundwkt": "COMPD_CS[\"DAT1965, AiryMod1849, TM65 / Irish Grid\",PROJCS[\"TM65 / Irish Grid\",GEOGCS[\"DAT1965, AiryMod1849\",DATUM[\"unnamed\",SPHEROID[\"unnamed\",6377340.189,299.324964599999]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",53.5],PARAMETER[\"central_meridian\",-8],PARAMETER[\"scale_factor\",1.000035],PARAMETER[\"false_easting\",200000.32],PARAMETER[\"false_northing\",250000.08],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]],VERT_CS[\"unknown\",VERT_DATUM[\"unknown\",2005],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Up\",UP]]]",
+      "horizontal": "PROJCS[\"TM65 / Irish Grid\",GEOGCS[\"DAT1965, AiryMod1849\",DATUM[\"unnamed\",SPHEROID[\"unnamed\",6377340.189,299.324964599999]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",53.5],PARAMETER[\"central_meridian\",-8],PARAMETER[\"scale_factor\",1.000035],PARAMETER[\"false_easting\",200000.32],PARAMETER[\"false_northing\",250000.08],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+      "isgeocentric": false,
+      "isgeographic": false,
+      "prettycompoundwkt": "COMPD_CS[\"DAT1965, AiryMod1849, TM65 / Irish Grid\",\n    PROJCS[\"TM65 / Irish Grid\",\n        GEOGCS[\"DAT1965, AiryMod1849\",\n            DATUM[\"unnamed\",\n                SPHEROID[\"unnamed\",6377340.189,299.324964599999]],\n            PRIMEM[\"Greenwich\",0],\n            UNIT[\"degree\",0.0174532925199433,\n                AUTHORITY[\"EPSG\",\"9122\"]]],\n        PROJECTION[\"Transverse_Mercator\"],\n        PARAMETER[\"latitude_of_origin\",53.5],\n        PARAMETER[\"central_meridian\",-8],\n        PARAMETER[\"scale_factor\",1.000035],\n        PARAMETER[\"false_easting\",200000.32],\n        PARAMETER[\"false_northing\",250000.08],\n        UNIT[\"metre\",1,\n            AUTHORITY[\"EPSG\",\"9001\"]],\n        AXIS[\"Easting\",EAST],\n        AXIS[\"Northing\",NORTH]],\n    VERT_CS[\"unknown\",\n        VERT_DATUM[\"unknown\",2005],\n        UNIT[\"metre\",1,\n            AUTHORITY[\"EPSG\",\"9001\"]],\n        AXIS[\"Up\",UP]]]",
+      "prettywkt": "PROJCS[\"TM65 / Irish Grid\",\n    GEOGCS[\"DAT1965, AiryMod1849\",\n        DATUM[\"unnamed\",\n            SPHEROID[\"unnamed\",6377340.189,299.324964599999]],\n        PRIMEM[\"Greenwich\",0],\n        UNIT[\"degree\",0.0174532925199433,\n            AUTHORITY[\"EPSG\",\"9122\"]]],\n    PROJECTION[\"Transverse_Mercator\"],\n    PARAMETER[\"latitude_of_origin\",53.5],\n    PARAMETER[\"central_meridian\",-8],\n    PARAMETER[\"scale_factor\",1.000035],\n    PARAMETER[\"false_easting\",200000.32],\n    PARAMETER[\"false_northing\",250000.08],\n    UNIT[\"metre\",1,\n        AUTHORITY[\"EPSG\",\"9001\"]],\n    AXIS[\"Easting\",EAST],\n    AXIS[\"Northing\",NORTH]]",
+      "proj4": "+proj=tmerc +lat_0=53.5 +lon_0=-8 +k=1.000035 +x_0=200000.32 +y_0=250000.08 +a=6377340.189 +rf=299.324964599999 +units=m +vunits=m +no_defs",
+      "units":
+      {
+        "horizontal": "metre",
+        "vertical": "metre"
+      },
+      "vertical": "VERT_CS[\"unknown\",VERT_DATUM[\"unknown\",2005],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Up\",UP]]",
+      "wkt": "PROJCS[\"TM65 / Irish Grid\",GEOGCS[\"DAT1965, AiryMod1849\",DATUM[\"unnamed\",SPHEROID[\"unnamed\",6377340.189,299.324964599999]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",53.5],PARAMETER[\"central_meridian\",-8],PARAMETER[\"scale_factor\",1.000035],PARAMETER[\"false_easting\",200000.32],PARAMETER[\"false_northing\",250000.08],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]"
+    },
+    "system_id": "RiPROCESS 1.6.5",
+    "vlr_0":
+    {
+      "data": "AQABAAAAGQAABAAAAQABAAEEAAABAAIAAgSxhygAAAAACAAAAQD/fwEIsYcVADoAAggAAAEA/38DCAAAAQD/fwQIAAABACkjBggAAAEAjiMICAAAAQD/fwkIsIcBAAYACwiwhwEABwAMCAAAAQCOIw0IsIcBAAUAAAwAAAEA/38BDLGHEgAoAAIMAAABAP9/AwwAAAEAAQAEDAAAAQApIwgMsIcBAAEACQywhwEAAAAKDLCHAQACAAsMsIcBAAMAFAywhwEABAADEAAAAQApIw==",
+      "description": "GeoKeyDirectoryTag (mandatory)",
+      "record_id": 34735,
+      "user_id": "LASF_Projection"
+    },
+    "vlr_1":
+    {
+      "data": "AAAAAADASkAAAAAAAAAgwPYoXI8CaghBPQrXo4CEDkGOrz2zJADwPwAAAAAAAAAAdZMYDN9TWEG5lRQOM7VyQA==",
+      "description": "GeoDoubleParamsTag (optional)",
+      "record_id": 34736,
+      "user_id": "LASF_Projection"
+    },
+    "vlr_2":
+    {
+      "data": "REFUMTk2NSwgQWlyeU1vZDE4NDksIFRNNjUgLyBJcmlzaCBHcmlkfFRNNjUgLyBJcmlzaCBHcmlkfERBVDE5NjUsIEFpcnlNb2QxODQ5fA==",
+      "description": "GeoASCIIParamsTag (optional)",
+      "record_id": 34737,
+      "user_id": "LASF_Projection"
+    },
+    "vlr_3":
+    {
+      "data": "AgAAAAIFAgAAAAAAUMMAAP////////////////////8CAAYAFAACAAcACAACAA==",
+      "description": "by laszip of LAStools (170327)",
+      "record_id": 22204,
+      "user_id": "laszip encoded"
+    }
+  },
+  "pdal_version": "2.0.1 (git-version: 6600e6)"
+}
+(new_clouds) myuser@comp:~/dublin$

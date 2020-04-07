@@ -1,0 +1,29 @@
+(new_clouds) myuser@comp:~/phili$ pdal pipeline denoise.json
+(new_clouds) myuser@comp:~/phili$ tree temp_data/
+temp_data/
+├── boundary.sqlite
+├── clean.laz
+├── E280N1553_LAZ_PL1.las
+├── E280N1553_LAZ_PL1_WGS.laz
+└── ept_phili_to_laz.laz
+
+0 directories, 5 files
+(new_clouds) myuser@comp:~/phili$ pdal info --boundary temp_data/clean.laz
+{
+  "boundary":
+  {
+    "area": 81355357.53,
+    "avg_pt_per_sq_unit": 29.95675523,
+    "avg_pt_spacing": 3.159997638,
+    "boundary": "POLYGON ((284609.97 1544906.0,289844.42 1548791.5,286853.31 1556562.7,277879.96 1551381.9,280871.08 1546201.2,284609.97 1544906.0))",
+    "boundary_json": { "type": "Polygon", "coordinates": [ [ [ 284609.971245159977116, 1544905.9744242799934 ], [ 289844.422529059986118, 1548791.546813880093396 ], [ 286853.307509689999279, 1556562.691593060037121 ], [ 277879.962451570027042, 1551381.928406940074638 ], [ 280871.077470940013882, 1546201.165220810100436 ], [ 284609.971245159977116, 1544905.9744242799934 ] ] ] },
+    "density": 0.1001443574,
+    "edge_length": 0,
+    "estimated_edge": 2590.381593,
+    "hex_offsets": "MULTIPOINT (0 0, -747.779 1295.19, 0 2590.38, 1495.56 2590.38, 2243.34 1295.19, 1495.56 0)",
+    "sample_size": 5000,
+    "threshold": 15
+  },
+  "filename": "temp_data/clean.laz",
+  "pdal_version": "2.0.1 (git-version: 6600e6)"
+}

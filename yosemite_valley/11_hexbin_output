@@ -1,0 +1,31 @@
+(new_clouds) myuser@comp:~/yose$ tree -L 1
+.
+├── entwine.json
+├── ept_yose
+├── hexbin-out.json
+├── hexbin-pipeline.json
+├── raw_data
+└── temp_data
+
+3 directories, 3 files
+(new_clouds) myuser@comp:~/yose$ pdal pipeline hexbin-pipeline.json --metadata hexbin-out.json
+(new_clouds) myuser@comp:~/yose$ pdal info --boundary temp_data/ept_yose_to_laz.laz
+{
+  "boundary":
+  {
+    "area": 741660728.7,
+    "avg_pt_per_sq_unit": 3.904920938,
+    "avg_pt_spacing": 1.140894523,
+    "boundary": "POLYGON ((283713.94 4162551.0,294060.41 4192418.7,256123.35 4186445.1,256123.35 4174498.1,283713.94 4162551.0))",
+    "boundary_json": { "type": "Polygon", "coordinates": [ [ [ 283713.941809380019549, 4162550.982932080049068 ], [ 294060.414895010006148, 4192418.678045279812068 ], [ 256123.346914369991282, 4186445.1390226399526 ], [ 256123.346914369991282, 4174498.060977359768003 ], [ 283713.941809380019549, 4162550.982932080049068 ] ] ] },
+    "density": 0.7682613936,
+    "edge_length": 0,
+    "estimated_edge": 11947.07805,
+    "hex_offsets": "MULTIPOINT (0 0, -3448.82 5973.54, 0 11947.1, 6897.65 11947.1, 10346.5 5973.54, 6897.65 0)",
+    "sample_size": 5000,
+    "threshold": 15
+  },
+  "filename": "temp_data/ept_yose_to_laz.laz",
+  "pdal_version": "2.0.1 (git-version: 6600e6)"
+}
+(new_clouds) myuser@comp:~/yose$

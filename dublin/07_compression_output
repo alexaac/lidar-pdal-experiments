@@ -1,0 +1,5 @@
+(new_clouds) myuser@comp:~/dublin$ ls -lah raw_data/T_315000_233500.laz
+-rw-r--r-- 1 myuser myuser 431M apr 24  2017 raw_data/T_315000_233500.laz
+(new_clouds) myuser@comp:~/dublin$ ls -lah temp_data/T_315000_233500.las
+-rw-r--r-- 1 myuser myuser 2,9G mar  4 21:41 temp_data/T_315000_233500.las
+(new_clouds) myuser@comp:~/dublin$

@@ -1,0 +1,11 @@
+myuser@comp:~/dublin/raw_data$ tree
+.
+├── T_315000_233500.laz
+├── T_315000_234000.laz
+├── T_315500_233500.laz
+├── T_315500_234000.laz
+├── T_316000_233500.laz
+└── T_316000_234000.laz
+
+0 directories, 6 files
+myuser@comp:~/dublin/raw_data$

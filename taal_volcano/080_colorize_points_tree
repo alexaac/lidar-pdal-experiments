@@ -1,0 +1,24 @@
+(new_clouds) myuser@comp:~/dublin/imagery$ tree
+.
+├── 315000_233500.tfw
+├── 315000_233500.tif
+├── 315000_234000.tfw
+├── 315000_234000.tif
+├── 315500_233500.tfw
+├── 315500_233500.tif
+├── 315500_234000.tfw
+└── 315500_234000.tif
+
+0 directories, 8 files
+(new_clouds) myuser@comp:~/dublin/imagery$ cd ..
+(new_clouds) myuser@comp:~/dublin$ gdalbuildvrt  ./aerial.vrt ./imagery/*.tif
+0...10...20..proj_create_from_database: datum not found
+proj_create_from_database: prime meridian not found
+.30...40...50proj_create_from_database: datum not found
+proj_create_from_database: prime meridian not found
+...60...70..proj_create_from_database: datum not found
+proj_create_from_database: prime meridian not found
+.80...90...100 - done.
+proj_create_from_database: datum not found
+proj_create_from_database: prime meridian not found
+(new_clouds) myuser@comp:~/dublin$

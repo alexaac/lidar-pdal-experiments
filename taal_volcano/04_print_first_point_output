@@ -1,0 +1,25 @@
+(new_clouds) myuser@comp:~/phili$ pdal info raw_data/E280N1553_LAZ_PL1.laz -p 0
+{
+  "filename": "raw_data/E280N1553_LAZ_PL1.laz",
+  "pdal_version": "2.0.1 (git-version: 6600e6)",
+  "points":
+  {
+    "point":
+    {
+      "Classification": 1,
+      "EdgeOfFlightLine": 0,
+      "GpsTime": 270635.4339,
+      "Intensity": 15,
+      "NumberOfReturns": 1,
+      "PointId": 0,
+      "PointSourceId": 1010,
+      "ReturnNumber": 1,
+      "ScanAngleRank": -26,
+      "ScanDirectionFlag": 0,
+      "UserData": 0,
+      "X": 280999.99,
+      "Y": 1552622.08,
+      "Z": 260.8
+    }
+  }
+}

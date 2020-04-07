@@ -1,0 +1,25 @@
+(new_clouds) myuser@comp:~/dublin$ pdal translate -i temp_data/dublin-colored.laz \
+>    -o temp_data/ept_dublin_cropped.laz \
+>    --readers.las.spatialreference="EPSG:29902" -f crop  \
+>    --filters.crop.polygon="MultiPolygon (((315306.69747585966251791 234006.38032227798248641, 315464.59967673319624737 234059.95428328868001699, 315630.96092408214462921 234034.57714386255247518, 315616.86251328984508291 233732.8711529077263549, 315470.23904105013934895 233670.83814542170148343, 315306.69747585966251791 234006.38032227798248641)))"
+
+(new_clouds) myuser@comp:~/dublin$ pdal info temp_data/ept_dublin_cropped.laz --boundary
+{
+  "boundary":
+  {
+    "area": 2226527.833,
+    "avg_pt_per_sq_unit": 14.10215304,
+    "avg_pt_spacing": 2.168113852,
+    "boundary": "POLYGON ((316005.52 232786.05,316272.75 234174.66,315471.04 234637.53,314402.09 233711.79,316005.52 232786.05))",
+    "boundary_json": { "type": "Polygon", "coordinates": [ [ [ 316005.515120149997529, 232786.051936289994046 ], [ 316272.752680230012629, 234174.659031860006507 ], [ 315471.039999999979045, 234637.528063709993148 ], [ 314402.089759700000286, 233711.790000000008149 ], [ 316005.515120149997529, 232786.051936289994046 ] ] ] },
+    "density": 0.2127334736,
+    "edge_length": 0,
+    "estimated_edge": 925.7380637,
+    "hex_offsets": "MULTIPOINT (0 0, -267.238 462.869, 0 925.738, 534.475 925.738, 801.713 462.869, 534.475 0)",
+    "sample_size": 5000,
+    "threshold": 15
+  },
+  "filename": "temp_data/ept_dublin_cropped.laz",
+  "pdal_version": "2.0.1 (git-version: 6600e6)"
+}
+(new_clouds) myuser@comp:~/dublin$

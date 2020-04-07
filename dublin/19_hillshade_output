@@ -1,0 +1,6 @@
+(new_clouds) myuser@comp:~/dublin$ gdaldem hillshade temp_data/dtm.tif \
+>     temp_data/hillshade.tif \
+>     -z 1.0 -s 1.0 -az 315.0 -alt 45.0 \
+>     -of GTiff
+0...10...20...30...40...50...60...70...80...90...100 - done.
+(new_clouds) myuser@comp:~/dublin$

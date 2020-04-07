@@ -1,0 +1,20 @@
+(new_clouds) myuser@comp:~/yose$ pdal info temp_data/ept_yose_cropped.laz --boundary
+{
+  "boundary":
+  {
+    "area": 716413798.1,
+    "avg_pt_per_sq_unit": 3.852125713,
+    "avg_pt_spacing": 1.133155728,
+    "boundary": "POLYGON ((283415.37 4162704.7,293584.21 4192059.6,256298.44 4186188.6,256298.44 4174446.6,283415.37 4162704.7))",
+    "boundary_json": { "type": "Polygon", "coordinates": [ [ [ 283415.366322420013603, 4162704.652427020017058 ], [ 293584.212115879985504, 4192059.58171531977132 ], [ 256298.444206549989758, 4186188.595857659820467 ], [ 256298.444206549989758, 4174446.624142339918762 ], [ 283415.366322420013603, 4162704.652427020017058 ] ] ] },
+    "density": 0.7787907833,
+    "edge_length": 0,
+    "estimated_edge": 11741.97172,
+    "hex_offsets": "MULTIPOINT (0 0, -3389.62 5870.99, 0 11742, 6779.23 11742, 10168.8 5870.99, 6779.23 0)",
+    "sample_size": 5000,
+    "threshold": 15
+  },
+  "filename": "temp_data/ept_yose_cropped.laz",
+  "pdal_version": "2.0.1 (git-version: 6600e6)"
+}
+(new_clouds) myuser@comp:~/yose$

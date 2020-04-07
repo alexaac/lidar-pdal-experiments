@@ -1,0 +1,1 @@
+gdaldem color-relief temp_data/dublin-classification.tif colours.txt temp_data/classified-color.png -of PNG

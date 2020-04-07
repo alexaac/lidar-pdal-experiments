@@ -1,0 +1,4 @@
+(new_clouds) myuser@comp:~/yose$ pdal pipeline dtm.json
+(new_clouds) myuser@comp:~/yose$ ls -lah temp_data/dtm.tif
+-rw-r--r-- 1 myuser myuser 2,5G feb 20 22:50 dtm.tif
+(new_clouds) myuser@comp:~/yose$

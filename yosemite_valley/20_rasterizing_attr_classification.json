@@ -1,0 +1,16 @@
+{
+    "pipeline":[
+        {
+            "type":"readers.las",
+            "filename":"temp_data/ept_yose_to_laz.laz"
+        },
+        {
+            "type":"writers.gdal",
+            "filename":"temp_data/yose-classification.tif",
+            "dimension":"Classification",
+            "data_type":"uint16_t",
+            "output_type":"mean",
+            "resolution": 1
+        }
+    ]
+}

@@ -1,0 +1,60 @@
+(new_clouds) myuser@comp:~/phili$ pdal info raw_data/E280N1553_LAZ_PL1.laz --query "280713.745, 1552334.930, 154.290/3"
+{
+  "filename": "raw_data/E280N1553_LAZ_PL1.laz",
+  "pdal_version": "2.0.1 (git-version: 6600e6)",
+  "points":
+  {
+    "point":
+    [
+      {
+        "Classification": 1,
+        "EdgeOfFlightLine": 0,
+        "GpsTime": 270635.4342,
+        "Intensity": 9,
+        "NumberOfReturns": 1,
+        "PointId": 42,
+        "PointSourceId": 1010,
+        "ReturnNumber": 1,
+        "ScanAngleRank": -26,
+        "ScanDirectionFlag": 1,
+        "UserData": 0,
+        "X": 280999.98,
+        "Y": 1552622.09,
+        "Z": 262.28
+      },
+      {
+        "Classification": 1,
+        "EdgeOfFlightLine": 0,
+        "GpsTime": 270635.434,
+        "Intensity": 16,
+        "NumberOfReturns": 1,
+        "PointId": 19,
+        "PointSourceId": 1010,
+        "ReturnNumber": 1,
+        "ScanAngleRank": -26,
+        "ScanDirectionFlag": 0,
+        "UserData": 0,
+        "X": 280999.91,
+        "Y": 1552622.26,
+        "Z": 262.15
+      },
+      {
+        "Classification": 1,
+        "EdgeOfFlightLine": 0,
+        "GpsTime": 270635.4341,
+        "Intensity": 14,
+        "NumberOfReturns": 1,
+        "PointId": 34,
+        "PointSourceId": 1010,
+        "ReturnNumber": 1,
+        "ScanAngleRank": -26,
+        "ScanDirectionFlag": 1,
+        "UserData": 0,
+        "X": 280999.89,
+        "Y": 1552622.3,
+        "Z": 262.13
+      }
+    ]
+  }
+}
+(new_clouds) myuser@comp:~/phili$ 

@@ -1,0 +1,1 @@
+gdal_translate temp_data/intensity.tif temp_data/intensity.png -of PNG

@@ -1,0 +1,28 @@
+(new_clouds) myuser@comp:~/yose$ mkdir -pv laz_tiles
+mkdir: created directory 'laz_tiles'
+(new_clouds) myuser@comp:~/yose$ pdal tile -i "las_files/*.las" \
+>           -o "laz_tiles/yose_#.laz" \
+>           --out_srs="EPSG:26911"
+(new_clouds) myuser@comp:~/yose$ ls -la laz_tiles | head -10
+total 2095836
+drwxr-xr-x 2 myuser myuser     4096 feb 19 21:23 .
+drwxr-xr-x 7 myuser myuser     4096 feb 19 21:16 ..
+-rw-r--r-- 1 myuser myuser   426303 feb 19 21:24 yose_0_0.laz
+-rw-r--r-- 1 myuser myuser  6070318 feb 19 21:24 yose_0_-1.laz
+-rw-r--r-- 1 myuser myuser  9484799 feb 19 21:24 yose_0_-2.laz
+-rw-r--r-- 1 myuser myuser  8178030 feb 19 21:24 yose_0_-3.laz
+-rw-r--r-- 1 myuser myuser  7145497 feb 19 21:24 yose_0_-4.laz
+-rw-r--r-- 1 myuser myuser  6998980 feb 19 21:24 yose_0_-5.laz
+-rw-r--r-- 1 myuser myuser  1387969 feb 19 21:24 yose_0_-6.laz
+(new_clouds) myuser@comp:~/yose$ ls -la laz_tiles | tail -10
+-rw-r--r-- 1 myuser myuser 46019612 feb 19 21:24 yose_9_0.laz
+-rw-r--r-- 1 myuser myuser 27848492 feb 19 21:24 yose_9_-1.laz
+-rw-r--r-- 1 myuser myuser 39658296 feb 19 21:24 yose_9_1.laz
+-rw-r--r-- 1 myuser myuser 33373584 feb 19 21:24 yose_9_-2.laz
+-rw-r--r-- 1 myuser myuser 29441795 feb 19 21:24 yose_9_2.laz
+-rw-r--r-- 1 myuser myuser 13122580 feb 19 21:24 yose_9_-3.laz
+-rw-r--r-- 1 myuser myuser  9873921 feb 19 21:24 yose_9_3.laz
+-rw-r--r-- 1 myuser myuser  1817222 feb 19 21:24 yose_9_-4.laz
+-rw-r--r-- 1 myuser myuser    27836 feb 19 21:24 yose_9_4.laz
+-rw-r--r-- 1 myuser myuser   167052 feb 19 21:24 yose_9_-5.laz
+(new_clouds) myuser@comp:~/yose$

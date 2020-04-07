@@ -1,0 +1,24 @@
+(new_clouds) myuser@comp:~/yose$ pdal translate raw_data/points_little_yose.laz     -o temp_data/denoised_ground.laz     outlier smrf range      --filters.outlier.method="statistical"     --filters.outlier.mean_k=8 --filters.outlier.multiplier=3.0     --filters.smrf.ignore="Classification[7:7]"      --filters.range.limits="Classification[2:2]"     --writers.las.compression=true     --verbose 4
+(PDAL Debug) Debugging...
+(pdal translate Debug) Executing pipeline in standard mode.
+(pdal translate filters.smrf Debug) progressiveFilter: radius = 1	23252664 ground	275302 non-ground	(1.17%)
+(pdal translate filters.smrf Debug) progressiveFilter: radius = 1	20758157 ground	2769809 non-ground	(11.77%)
+(pdal translate filters.smrf Debug) progressiveFilter: radius = 2	20111578 ground	3416388 non-ground	(14.52%)
+(pdal translate filters.smrf Debug) progressiveFilter: radius = 3	19876730 ground	3651236 non-ground	(15.52%)
+(pdal translate filters.smrf Debug) progressiveFilter: radius = 4	19772890 ground	3755076 non-ground	(15.96%)
+(pdal translate filters.smrf Debug) progressiveFilter: radius = 5	19722877 ground	3805089 non-ground	(16.17%)
+(pdal translate filters.smrf Debug) progressiveFilter: radius = 6	19697383 ground	3830583 non-ground	(16.28%)
+(pdal translate filters.smrf Debug) progressiveFilter: radius = 7	19682197 ground	3845769 non-ground	(16.35%)
+(pdal translate filters.smrf Debug) progressiveFilter: radius = 8	19672602 ground	3855364 non-ground	(16.39%)
+(pdal translate filters.smrf Debug) progressiveFilter: radius = 9	19665475 ground	3862491 non-ground	(16.42%)
+(pdal translate filters.smrf Debug) progressiveFilter: radius = 10	19660243 ground	3867723 non-ground	(16.44%)
+(pdal translate filters.smrf Debug) progressiveFilter: radius = 11	19655291 ground	3872675 non-ground	(16.46%)
+(pdal translate filters.smrf Debug) progressiveFilter: radius = 12	19650449 ground	3877517 non-ground	(16.48%)
+(pdal translate filters.smrf Debug) progressiveFilter: radius = 13	19646760 ground	3881206 non-ground	(16.50%)
+(pdal translate filters.smrf Debug) progressiveFilter: radius = 14	19642130 ground	3885836 non-ground	(16.52%)
+(pdal translate filters.smrf Debug) progressiveFilter: radius = 15	19637273 ground	3890693 non-ground	(16.54%)
+(pdal translate filters.smrf Debug) progressiveFilter: radius = 16	19632696 ground	3895270 non-ground	(16.56%)
+(pdal translate filters.smrf Debug) progressiveFilter: radius = 17	19626881 ground	3901085 non-ground	(16.58%)
+(pdal translate filters.smrf Debug) progressiveFilter: radius = 18	19623021 ground	3904945 non-ground	(16.60%)
+(pdal translate writers.las Debug) Wrote 16887929 points to the LAS file
+(new_clouds) myuser@comp:~/yose$

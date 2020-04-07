@@ -1,0 +1,15 @@
+(new_clouds) myuser@comp:~/phili$ pdal translate temp_data/ept_phili_to_laz.laz \
+>     temp_data/thin.laz \
+>     sample --filters.sample.radius=20
+(new_clouds) myuser@comp:~/phili$ tree temp_data/
+temp_data/
+├── boundary.sqlite
+├── clean.laz
+├── density.sqlite
+├── E280N1553_LAZ_PL1.las
+├── E280N1553_LAZ_PL1_WGS.laz
+├── ept_phili_to_laz.laz
+└── thin.laz
+
+0 directories, 7 files
+(new_clouds) myuser@comp:~/phili$

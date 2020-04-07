@@ -1,0 +1,20 @@
+{
+    "pipeline": [
+        "temp_data/ept_yose_to_laz.laz",
+        {
+            "type": "filters.colorization",
+            "raster": "aerial.vrt"
+        },
+        {
+            "type": "filters.range",
+            "limits": "Red[1:]"
+        },
+        {
+            "type": "writers.las",
+            "compression": "true",
+            "minor_version": "2",
+            "dataformat_id": "3",
+            "filename":"temp_data/yose-colored.laz"
+        }
+    ]
+}

@@ -1,0 +1,6 @@
+(new_clouds) myuser@comp:~/phili$ mkdir temp_data && pdal translate raw_data/E280N1553_LAZ_PL1.laz temp_data/E280N1553_LAZ_PL1.las
+(new_clouds) myuser@comp:~/phili$ ls -lah raw_data/E280N1553_LAZ_PL1.laz
+-rwxrwxrwx 1 myuser myuser 3,1M feb  6 20:52 raw_data/E280N1553_LAZ_PL1.laz
+(new_clouds) myuser@comp:~/phili$ ls -lah temp_data/E280N1553_LAZ_PL1.las
+-rw-r--r-- 1 myuser myuser 30M feb  7 00:17 temp_data/E280N1553_LAZ_PL1.las
+(new_clouds) myuser@comp:~/phili$

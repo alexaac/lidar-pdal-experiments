@@ -1,0 +1,1 @@
+pdal info raw_data/points_little_yose.las --query "277177.53, 4180183.58, 2379.875/3"

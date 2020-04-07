@@ -1,0 +1,20 @@
+{
+    "pipeline": [
+        "temp_data/dublin-colored.laz",
+        {
+            "type": "filters.colorization",
+            "raster": "aerial.vrt"
+        },
+        {
+            "type": "filters.range",
+            "limits": "Red[1:]"
+        },
+        {
+            "type": "writers.las",
+            "compression": "true",
+            "minor_version": "2",
+            "dataformat_id": "3",
+            "filename":"temp_data/dublin-colored.laz"
+        }
+    ]
+}

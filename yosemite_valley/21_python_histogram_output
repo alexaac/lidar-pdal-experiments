@@ -1,0 +1,3 @@
+(new_clouds) myuser@comp:~/yose$ pdal pipeline histogram.json
+anything:46: UserWarning: Attempting to set identical left == right == 0 results in singular transformations; automatically expanding.
+(new_clouds) myuser@comp:~/yose$

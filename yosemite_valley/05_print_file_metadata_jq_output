@@ -1,0 +1,4 @@
+pdal info raw_data/points_little_yose.las --metadata | jq  ".metadata.maxx, .metadata.count"
+pdal info raw_data/points_extra_yose.las --metadata | jq  ".metadata.maxx, .metadata.count"
+pdal info raw_data/points_rockfall_1.las --metadata | jq  ".metadata.maxx, .metadata.count"
+pdal info raw_data/points_rockfall_2.las --metadata | jq  ".metadata.maxx, .metadata.count"

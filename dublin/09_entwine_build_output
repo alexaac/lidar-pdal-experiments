@@ -1,0 +1,81 @@
+(new_clouds) myuser@comp:~/dublin$ entwine build -i temp_data/dublin-colored.laz -o ept_dublin_colored --srs "EPSG:29902"
+Scanning input
+1/1: temp_data/dublin-colored.laz
+
+Entwine Version: 2.1.0
+EPT Version: 1.0.0
+Input:
+	File: temp_data/dublin-colored.laz
+	Total points: 528,506,762
+	Density estimate (per square unit): 352.339
+	Threads: [1, 7]
+Output:
+	Path: ept_dublin_colored/
+	Data type: laszip
+	Hierarchy type: json
+	Sleep count: 2,097,152
+	Scale: 0.01
+	Offset: (315750, 234000, 138)
+Metadata:
+	SRS: EPSG:29902
+	Bounds: [(314999, 233499, -110), (316501, 234501, 386)]
+	Cube: [(314998, 233248, -614), (316502, 234752, 890)]
+	Storing dimensions: [
+                X:int32, Y:int32, Z:int32, Intensity:uint16, ReturnNumber:uint8,
+                NumberOfReturns:uint8, ScanDirectionFlag:uint8,
+                EdgeOfFlightLine:uint8, Classification:uint8, ScanAngleRank:float,
+                UserData:uint8, PointSourceId:uint16, GpsTime:double, Red:uint16,
+                Green:uint16, Blue:uint16, OriginId:uint32
+	]
+Build parameters:
+	Span: 128
+	Resolution 2D: 128 * 128 = 16,384
+	Resolution 3D: 128 * 128 * 128 = 2,097,152
+	Maximum node size: 65,536
+	Minimum node size: 16,384
+	Cache size: 64
+
+Adding 0 - temp_data/dublin-colored.laz
+	Pushes complete - joining...
+00:10 - 1% - 6,807,552 - 2,450(2,450)M/h - 0W - 0R - 172A
+00:20 - 2% - 12,521,472 - 2,253(2,057)M/h - 85W - 9R - 229A
+[...]
+59:40 - 65% - 344,825,856 - 346(97)M/h - 235W - 60R - 576A
+59:50 - 65% - 345,542,656 - 346(258)M/h - 0W - 81R - 673A
+01:00:00 - 65% - 346,095,616 - 346(199)M/h - 0W - 97R - 782A
+01:00:10 - 66% - 346,701,824 - 345(218)M/h - 60W - 99R - 840A
+01:00:20 - 66% - 347,009,024 - 345(110)M/h - 303W - 42R - 578A
+[...]
+01:36:40 - 100% - 527,835,136 - 327(148)M/h - 24W - 56R - 589A
+01:36:50 - 100% - 528,506,762 - 327(241)M/h - 66W - 75R - 618A
+	Done 0
+Reawakened: 40810
+Saving registry...
+Saving metadata...
+
+Index completed in 01:36:57.
+Save complete.
+	Points inserted: 528,506,762
+(new_clouds) myuser@comp:~/dublin$ tree ept_dublin_colored/ | head -10
+ept_dublin_colored/
+├── ept-build.json
+├── ept-data
+│   ├── 0-0-0-0.laz
+│   ├── 1-0-0-0.laz
+│   ├── 1-0-1-0.laz
+│   ├── 1-1-0-0.laz
+│   ├── 1-1-1-0.laz
+│   ├── 2-0-0-1.laz
+│   ├── 2-0-1-1.laz
+(new_clouds) myuser@comp:~/dublin$ tree ept_dublin_colored/ | tail -10
+│   ├── 8-231-115-104.laz
+│   └── 8-244-129-105.laz
+├── ept-hierarchy
+│   └── 0-0-0-0.json
+├── ept.json
+└── ept-sources
+    ├── 0.json
+    └── list.json
+
+3 directories, 13109 files
+(new_clouds) myuser@comp:~/dublin$

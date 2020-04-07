@@ -1,0 +1,58 @@
+(new_clouds) myuser@comp:~/dublin$ pdal info raw_data/T_315000_233500.laz -p 0
+proj_create_from_database: datum not found
+proj_create_from_database: ellipsoid not found
+proj_create_from_database: prime meridian not found
+
+{
+  "filename": "raw_data/T_315000_233500.laz",
+  "pdal_version": "2.0.1 (git-version: 6600e6)",
+  "points":
+  {
+    "point":
+    {
+      "Classification": 4,
+      "EdgeOfFlightLine": 0,
+      "GpsTime": 388567.0446,
+      "Intensity": 8,
+      "NumberOfReturns": 2,
+      "PointId": 0,
+      "PointSourceId": 0,
+      "ReturnNumber": 2,
+      "ScanAngleRank": 30,
+      "ScanDirectionFlag": 1,
+      "UserData": 0,
+      "X": 315459.722,
+      "Y": 233580.778,
+      "Z": -61.811
+    }
+  }
+}
+(new_clouds) myuser@comp:~/dublin$ pdal info raw_data/T_315000_234000.laz -p 0
+proj_create_from_database: datum not found
+proj_create_from_database: ellipsoid not found
+proj_create_from_database: prime meridian not found
+{
+  "filename": "raw_data/T_315000_234000.laz",
+  "pdal_version": "2.0.1 (git-version: 6600e6)",
+  "points":
+  {
+    "point":
+    {
+      "Classification": 2,
+      "EdgeOfFlightLine": 0,
+      "GpsTime": 388615.3997,
+      "Intensity": 8,
+      "NumberOfReturns": 2,
+      "PointId": 0,
+      "PointSourceId": 0,
+      "ReturnNumber": 2,
+      "ScanAngleRank": 34,
+      "ScanDirectionFlag": 1,
+      "UserData": 0,
+      "X": 315000.379,
+      "Y": 234036.834,
+      "Z": 5.039
+    }
+  }
+}
+(new_clouds) myuser@comp:~/dublin$

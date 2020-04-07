@@ -1,0 +1,6 @@
+(new_clouds) myuser@comp:~/yose$ gdal_translate temp_data/intensity.tif temp_data/intensity.png -of PNG
+Input file size is 22747, 9618
+Warning 6: PNG driver doesn't support data type Float32. Only eight bit (Byte) and sixteen bit (UInt16) bands supported. Defaulting to Byte
+
+0...10...20...30...40...50...60...70...80...90...100 - done.
+(new_clouds) myuser@comp:~/yose$

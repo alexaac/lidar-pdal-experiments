@@ -1,0 +1,37 @@
+(new_clouds) myuser@comp:~/yose$ ls laz_tiles/*.laz | \
+> parallel -I{} pdal translate {} \
+>     -o denoised_grnd/denoised_grnd{/.}.laz \
+>     outlier smrf range  \
+>     --filters.outlier.method="statistical" \
+>     --filters.outlier.mean_k=8 --filters.outlier.multiplier=3.0 \
+>     --filters.smrf.ignore="Classification[7:7]"  \
+>     --filters.range.limits="Classification[2:2]" \
+>     --writers.las.compression=true \
+>     --verbose 4
+Academic tradition requires you to cite works you base your article on.
+When using programs that use GNU Parallel to process data for publication
+please cite:
+
+  O. Tange (2011): GNU Parallel - The Command-Line Power Tool,
+  ;login: The USENIX Magazine, February 2011:42-47.
+
+This helps funding further development; AND IT WON'T COST YOU A CENT.
+If you pay 10000 EUR you should feel free to use GNU Parallel without citing.
+
+To silence this citation notice: run 'parallel --citation'.
+
+(PDAL Debug) Debugging...
+(pdal translate Debug) Executing pipeline in standard mode.
+(pdal translate filters.smrf Debug) progressiveFilter: radius = 1	40177 ground	995 non-ground	(2.42%)
+(pdal translate filters.smrf Debug) progressiveFilter: radius = 1	33026 ground	8146 non-ground	(19.79%)
+(pdal translate filters.smrf Debug) progressiveFilter: radius = 2	31082 ground	10090 non-ground(24.51%)
+(pdal translate filters.smrf Debug) progressiveFilter: radius = 3	30493 ground	10679 non-ground(25.94%)
+(pdal translate filters.smrf Debug) progressiveFilter: radius = 4	30315 ground	10857 non-ground(26.37%)
+(pdal translate filters.smrf Debug) progressiveFilter: radius = 5	30276 ground	10896 non-ground(26.46%)
+(pdal translate filters.smrf Debug) progressiveFilter: radius = 6	30265 ground	10907 non-ground(26.49%)
+[...]
+(pdal translate filters.smrf Debug) progressiveFilter: radius = 16	843723 ground	237877 non-ground(21.99%)
+(pdal translate filters.smrf Debug) progressiveFilter: radius = 17	843470 ground	238130 non-ground(22.02%)
+(pdal translate filters.smrf Debug) progressiveFilter: radius = 18	843232 ground	238368 non-ground(22.04%)
+(pdal translate writers.las Debug) Wrote 6703951 points to the LAS file
+(new_clouds) myuser@comp:~/yose$

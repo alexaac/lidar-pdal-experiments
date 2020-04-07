@@ -1,0 +1,20 @@
+(new_clouds) myuser@comp:~/dublin$ pdal info --boundary temp_data/dublin-colored.laz
+{
+  "boundary":
+  {
+    "area": 7113155.893,
+    "avg_pt_per_sq_unit": 0.06273320804,
+    "avg_pt_spacing": 0.144606602,
+    "boundary": "POLYGON ((316291.86 232076.82,316291.86 234942.76,314223.56 235659.24,314223.56 232793.31,316291.86 232076.82))",
+    "boundary_json": { "type": "Polygon", "coordinates": [ [ [ 316291.863240830018185, 232076.824112250003964 ], [ 316291.863240830018185, 234942.755887750012334 ], [ 314223.555138760013506, 235659.238831630005734 ], [ 314223.555138760013506, 232793.307056119985646 ], [ 316291.863240830018185, 232076.824112250003964 ] ] ] },
+    "density": 47.82156206,
+    "edge_length": 0,
+    "estimated_edge": 1432.965888,
+    "hex_offsets": "MULTIPOINT (0 0, -413.662 716.483, 0 1432.97, 827.323 1432.97, 1240.98 716.483, 827.323 0)",
+    "sample_size": 5000,
+    "threshold": 15
+  },
+  "filename": "temp_data/dublin-colored.laz",
+  "pdal_version": "2.0.1 (git-version: 6600e6)"
+}
+(new_clouds) myuser@comp:~/dublin$

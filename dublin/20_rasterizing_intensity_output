@@ -1,0 +1,13 @@
+(new_clouds) myuser@comp:~/dublin$ pdal pipeline classification.json \
+>     --writers.gdal.dimension="Intensity" \
+>     --writers.gdal.data_type="float" \
+>     --writers.gdal.filename="temp_data/intensity.tif" \
+>     -v 3
+(PDAL Debug) Debugging...
+(pdal pipeline Debug) Executing pipeline in stream mode.
+(new_clouds) myuser@comp:~/dublin$ gdal_translate temp_data/intensity.tif temp_data/intensity.png -of PNG
+Input file size is 1501, 1001
+Warning 6: PNG driver doesn't support data type Float32. Only eight bit (Byte) and sixteen bit (UInt16) bands supported. Defaulting to Byte
+
+0...10...20...30...40...50...60...70...80...90...100 - done.
+(new_clouds) myuser@comp:~/dublin$

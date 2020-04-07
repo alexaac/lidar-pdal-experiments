@@ -1,0 +1,12 @@
+(new_clouds) myuser@comp:~/yose$ python
+Python 3.8.1 | packaged by conda-forge | (default, Jan 29 2020, 14:55:04) 
+[GCC 7.3.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 277177.53 + (277177.53 - 277177.53)/2
+277177.53
+>>> 4178720.94 + (4181646.22 - 4178720.94)/2
+4180183.58
+>>> 1853.19 + (2906.56 - 1853.19)/2
+2379.875
+>>> exit()
+(new_clouds) myuser@comp:~/yose$

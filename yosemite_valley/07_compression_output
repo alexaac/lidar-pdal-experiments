@@ -1,0 +1,17 @@
+(new_clouds) myuser@comp:~/yose$ pdal translate raw_data/points_little_yose.las raw_data/points_little_yose.laz
+(new_clouds) myuser@comp:~/yose$ pdal translate raw_data/points_extra_yose.las raw_data/points_extra_yose.laz
+(new_clouds) myuser@comp:~/yose$ pdal translate raw_data/points_rockfall_1.las raw_data/points_rockfall_1.laz
+(new_clouds) myuser@comp:~/yose$ pdal translate raw_data/points_rockfall_2.las raw_data/points_rockfall_2.laz
+(new_clouds) myuser@comp:~/yose$ ls -lah raw_data/points_little_yose.*
+-rwxrwxrwx 1 myuser myuser 800M dec 20 22:33 raw_data/points_little_yose.las
+-rw-r--r-- 1 myuser myuser 78M feb 16 22:41 raw_data/points_little_yose.laz
+(new_clouds) myuser@comp:~/yose$ ls -lah raw_data/points_extra_yose.*
+-rwxrwxrwx 1 myuser myuser 4,6G dec 20 11:25 raw_data/points_extra_yose.las
+-rw-r--r-- 1 myuser myuser 643M feb 16 22:43 raw_data/points_extra_yose.laz
+(new_clouds) myuser@comp:~/yose$ ls -lah raw_data/points_rockfall_1.*
+-rwxrwxrwx 1 myuser myuser 3,6G nov 29 17:54 raw_data/points_rockfall_1.las
+-rw-r--r-- 1 myuser myuser 613M feb 16 22:44 raw_data/points_rockfall_1.laz
+(new_clouds) myuser@comp:~/yose$ ls -lah raw_data/points_rockfall_2.*
+-rwxrwxrwx 1 myuser myuser 4,4G nov 29 19:28 raw_data/points_rockfall_2.las
+-rw-r--r-- 1 myuser myuser 708M feb 16 22:46 raw_data/points_rockfall_2.laz
+(new_clouds) myuser@comp:~/yose$

@@ -1,0 +1,71 @@
+(new_clouds) myuser@comp:~/dublin$ mkdir -pv denoised_grnd
+mkdir: created directory 'denoised_grnd'
+(new_clouds) myuser@comp:~/dublin$ ls laz_tiles/*.laz | \
+> parallel -I{} pdal translate {} \
+>     -o denoised_grnd/denoised_grnd{/.}.laz \
+>     outlier smrf range  \
+>     --filters.outlier.method="statistical" \
+>     --filters.outlier.mean_k=8 --filters.outlier.multiplier=3.0 \
+>     --filters.smrf.ignore="Classification[7:7]"  \
+>     --filters.range.limits="Classification[2:2]" \
+>     --writers.las.compression=true \
+>     --verbose 4
+Academic tradition requires you to cite works you base your article on.
+When using programs that use GNU Parallel to process data for publication
+please cite:
+
+  O. Tange (2011): GNU Parallel - The Command-Line Power Tool,
+  ;login: The USENIX Magazine, February 2011:42-47.
+
+This helps funding further development; AND IT WON'T COST YOU A CENT.
+If you pay 10000 EUR you should feel free to use GNU Parallel without citing.
+
+To silence this citation notice: run 'parallel --citation'.
+
+(PDAL Debug) Debugging...
+(pdal translate Debug) Executing pipeline in standard mode.
+(pdal translate filters.smrf Debug) progressiveFilter: radius = 1	390 ground	9 non-ground	(2.26%)
+(pdal translate filters.smrf Debug) progressiveFilter: radius = 1	325 ground	74 non-ground	(18.55%)
+(pdal translate filters.smrf Debug) progressiveFilter: radius = 2	289 ground	110 non-ground	(27.57%)
+(pdal translate filters.smrf Debug) progressiveFilter: radius = 3	236 ground	163 non-ground	(40.85%)
+(pdal translate filters.smrf Debug) progressiveFilter: radius = 4	215 ground	184 non-ground	(46.12%)
+(pdal translate filters.smrf Debug) progressiveFilter: radius = 5	202 ground	197 non-ground	(49.37%)
+(pdal translate filters.smrf Debug) progressiveFilter: radius = 6	202 ground	197 non-ground	(49.37%)
+(pdal translate filters.smrf Debug) progressiveFilter: radius = 7	200 ground	199 non-ground	(49.87%)
+(pdal translate filters.smrf Debug) progressiveFilter: radius = 8	145 ground	254 non-ground	(63.66%)
+(pdal translate filters.smrf Debug) progressiveFilter: radius = 9	126 ground	273 non-ground	(68.42%)
+(pdal translate filters.smrf Debug) progressiveFilter: radius = 10	126 ground	273 non-ground	(68.42%)
+(pdal translate filters.smrf Debug) progressiveFilter: radius = 11	126 ground	273 non-ground	(68.42%)
+(pdal translate filters.smrf Debug) progressiveFilter: radius = 12	126 ground	273 non-ground	(68.42%)
+(pdal translate filters.smrf Debug) progressiveFilter: radius = 13	126 ground	273 non-ground	(68.42%)
+(pdal translate filters.smrf Debug) progressiveFilter: radius = 14	126 ground	273 non-ground	(68.42%)
+(pdal translate filters.smrf Debug) progressiveFilter: radius = 15	126 ground	273 non-ground	(68.42%)
+(pdal translate filters.smrf Debug) progressiveFilter: radius = 16	126 ground	273 non-ground	(68.42%)
+(pdal translate filters.smrf Debug) progressiveFilter: radius = 17	126 ground	273 non-ground	(68.42%)
+(pdal translate filters.smrf Debug) progressiveFilter: radius = 18	126 ground	273 non-ground	(68.42%)
+(pdal translate writers.las Debug) Wrote 21580 points to the LAS file
+(PDAL Debug) Debugging...
+(pdal translate Debug) Executing pipeline in standard mode.
+(pdal translate filters.smrf Debug) progressiveFilter: radius = 1	380 ground	0 non-ground	(0.00%)
+(pdal translate filters.smrf Debug) progressiveFilter: radius = 1	377 ground	3 non-ground	(0.79%)
+[...]
+pdal translate filters.smrf Debug) progressiveFilter: radius = 15	284094 ground	238428 non-ground	(45.63%)
+(pdal translate filters.smrf Debug) progressiveFilter: radius = 16	283262 ground	239260 non-ground	(45.79%)
+(pdal translate filters.smrf Debug) progressiveFilter: radius = 17	282857 ground	239665 non-ground	(45.87%)
+(pdal translate filters.smrf Debug) progressiveFilter: radius = 18	281809 ground	240713 non-ground	(46.07%)
+(pdal translate writers.las Debug) Wrote 47101188 points to the LAS file
+(new_clouds) myuser@comp:~/dublin$ ls -la denoised_grnd/ | tail -10
+drwxr-xr-x 2 myuser myuser      4096 mar  6 02:03 .
+drwxrwxr-x 9 myuser myuser      4096 mar  6 01:37 ..
+-rw-r--r-- 1 myuser myuser   7600546 mar  6 01:39 denoised_grnddublin_0_-1.laz
+-rw-r--r-- 1 myuser myuser   5872437 mar  6 01:38 denoised_grnddublin_0_1.laz
+-rw-r--r-- 1 myuser myuser 221158620 mar  6 02:04 denoised_grnddublin_-1_0.laz
+-rw-r--r-- 1 myuser myuser   8243806 mar  6 01:38 denoised_grnddublin_1_0.laz
+-rw-r--r-- 1 myuser myuser   2419424 mar  6 01:38 denoised_grnddublin_-1_-1.laz
+-rw-r--r-- 1 myuser myuser   1399477 mar  6 01:38 denoised_grnddublin_-1_1.laz
+-rw-r--r-- 1 myuser myuser     82192 mar  6 01:37 denoised_grnddublin_1_-1.laz
+-rw-r--r-- 1 myuser myuser    448281 mar  6 01:37 denoised_grnddublin_1_1.laz
+(new_clouds) myuser@comp:~/dublin$ pdal merge denoised_grnd/*.laz denoised_grnd_f.laz
+(new_clouds) myuser@comp:~/dublin$ du -h denoised_grnd_f.laz 
+236M	denoised_grnd_f.laz
+(new_clouds) myuser@comp:~/dublin$

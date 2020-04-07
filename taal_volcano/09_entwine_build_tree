@@ -1,0 +1,24 @@
+(new_clouds) myuser@comp:~/phili$ tree ept_phili/
+ept_phili/
+├── ept-build.json
+├── ept-data
+│   ├── 0-0-0-0.laz
+│   ├── 1-0-0-0.laz
+│   ├── 1-0-0-1.laz
+│   ├── 1-0-1-0.laz
+│   ├── 1-0-1-1.laz
+│   ├── 1-1-0-0.laz
+[...]
+│   ├── 7-99-70-63.laz
+│   ├── 7-99-71-63.laz
+│   ├── 7-99-72-63.laz
+│   └── 7-99-75-63.laz
+├── ept-hierarchy
+│   └── 0-0-0-0.json
+├── ept.json
+└── ept-sources
+    ├── 0.json
+    └── list.json
+
+3 directories, 4489 files
+(new_clouds) myuser@comp:~/phili$

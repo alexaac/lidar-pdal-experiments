@@ -1,0 +1,10 @@
+(new_clouds) myuser@comp:~/dublin$ pdal translate raw_data/T_315000_233500.laz \
+>     temp_data/thin.laz \
+>     sample --filters.sample.radius=20
+proj_create_from_database: datum not found
+proj_create_from_database: ellipsoid not found
+proj_create_from_database: prime meridian not found
+
+(new_clouds) myuser@comp:~/dublin$ ls -lah temp_data/thin.laz
+-rw-r--r-- 1 myuser myuser 13K mar  6 00:51 temp_data/thin.laz
+(new_clouds) myuser@comp:~/dublin$

@@ -1,0 +1,12 @@
+(new_clouds) myuser@comp:~/phili$ python
+Python 3.8.1 | packaged by conda-forge | (default, Jan 29 2020, 14:55:04) 
+[GCC 7.3.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 280427.5 + (280999.99 - 280427.5)/2
+280713.745
+>>> 1552000 + (1552669.86 - 1552000)/2
+1552334.9300000002
+>>> 46.3 + (262.28 - 46.3)/2
+154.28999999999996
+>>> exit()
+(new_clouds) myuser@comp:~/phili$

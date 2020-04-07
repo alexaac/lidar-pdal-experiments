@@ -1,0 +1,82 @@
+(new_clouds) myuser@comp:~/yose$ entwine build -i temp_data/yose-colored.laz -o ept_yose_colored --srs "EPSG:26911"
+Scanning input
+1/1: temp_data/yose-colored.laz
+
+Entwine Version: 2.1.0
+EPT Version: 1.0.0
+Input:
+	File: temp_data/yose-colored.laz
+	Total points: 569,789,305
+	Density estimate (per square unit): 2.60487
+	Threads: [1, 7]
+Output:
+	Path: ept_yose_colored/
+	Data type: laszip
+	Hierarchy type: json
+	Sleep count: 2,097,152
+	Scale: 0.01
+	Offset: (273845, 4179692, 1924)
+Metadata:
+	SRS: EPSG:26911
+	Bounds: [(262472, 4174883, 747), (285219, 4184500, 3101)]
+	Cube: [(262471, 4168317, -9451), (285221, 4191067, 13299)]
+	Storing dimensions: [
+                X:int32, Y:int32, Z:int32, Intensity:uint16, ReturnNumber:uint8,
+                NumberOfReturns:uint8, ScanDirectionFlag:uint8,
+                EdgeOfFlightLine:uint8, Classification:uint8, ScanAngleRank:float,
+                UserData:uint8, PointSourceId:uint16, GpsTime:double, Red:uint16,
+                Green:uint16, Blue:uint16, OriginId:uint32
+	]
+Build parameters:
+	Span: 128
+	Resolution 2D: 128 * 128 = 16,384
+	Resolution 3D: 128 * 128 * 128 = 2,097,152
+	Maximum node size: 65,536
+	Minimum node size: 16,384
+	Cache size: 64
+
+Adding 0 - temp_data/yose-colored.laz
+	Pushes complete - joining...
+00:10 - 1% - 7,020,544 - 2,527(2,527)M/h - 17W - 0R - 146A
+00:20 - 2% - 13,324,288 - 2,398(2,269)M/h - 119W - 3R - 148A
+00:30 - 3% - 17,936,384 - 2,152(1,660)M/h - 91W - 14R - 161A
+[...]
+24:30 - 97% - 551,444,480 - 1,350(1,335)M/h - 152W - 38R - 230A
+24:40 - 97% - 554,762,240 - 1,349(1,194)M/h - 167W - 46R - 202A
+24:50 - 98% - 558,350,336 - 1,349(1,291)M/h - 89W - 37R - 249A
+25:00 - 98% - 561,094,656 - 1,346(987)M/h - 184W - 51R - 203A
+25:10 - 99% - 564,207,616 - 1,345(1,120)M/h - 97W - 46R - 258A
+25:20 - 100% - 567,181,312 - 1,343(1,070)M/h - 101W - 52R - 319A
+25:30 - 100% - 569,446,400 - 1,339(815)M/h - 245W - 63R - 238A
+	Done 0
+Reawakened: 6238
+Saving registry...
+Saving metadata...
+
+Index completed in 25:33.
+Save complete.
+	Points inserted: 569,789,305
+(new_clouds) myuser@comp:~/yose$ tree ept_yose_colored/ | head -10
+ept_yose_colored/
+├── ept-build.json
+├── ept-data
+│   ├── 0-0-0-0.laz
+│   ├── 1-0-0-0.laz
+│   ├── 1-0-0-1.laz
+│   ├── 1-0-1-0.laz
+│   ├── 1-0-1-1.laz
+│   ├── 1-1-0-0.laz
+│   ├── 1-1-0-1.laz
+(new_clouds) myuser@comp:~/yose$
+(new_clouds) myuser@comp:~/yose$ tree ept_yose_colored/ | tail -10
+│   ├── 8-99-98-132.laz
+│   └── 8-99-99-132.laz
+├── ept-hierarchy
+│   └── 0-0-0-0.json
+├── ept.json
+└── ept-sources
+    ├── 0.json
+    └── list.json
+
+3 directories, 13385 files
+(new_clouds) myuser@comp:~/yose$

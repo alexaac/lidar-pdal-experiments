@@ -1,0 +1,4 @@
+(new_clouds) myuser@comp:~/yose$ pdal pipeline colorize.json
+(new_clouds) myuser@comp:~/yose$ ls -lah temp_data/yose-colored.laz
+-rw-r--r-- 1 myuser myuser 3,5G feb 21 21:01 yose-colored.laz
+(new_clouds) myuser@comp:~/yose$

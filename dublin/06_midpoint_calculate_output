@@ -1,0 +1,12 @@
+(new_clouds) myuser@comp:~/dublin$ python
+Python 3.8.1 | packaged by conda-forge | (default, Jan 29 2020, 14:55:04) 
+[GCC 7.3.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> round(315000 + (315499.999 - 315000)/2, 2)
+315250.0
+>>> round(233500 + (233999.999 - 233500)/2, 2)
+233750.0
+>>> round(-93.254 + (361.183 - (-93.254))/2, 2)
+133.96
+>>> exit()
+(new_clouds) myuser@comp:~/dublin$

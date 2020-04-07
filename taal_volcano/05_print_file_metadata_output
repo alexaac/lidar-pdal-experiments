@@ -1,0 +1,62 @@
+(new_clouds) myuser@comp:~/phili$ pdal info raw_data/E280N1553_LAZ_PL1.laz --metadata
+{
+  "filename": "raw_data/E280N1553_LAZ_PL1.laz",
+  "metadata":
+  {
+    "comp_spatialreference": "",
+    "compressed": true,
+    "count": 902276,
+    "creation_doy": 46,
+    "creation_year": 2016,
+    "dataformat_id": 1,
+    "dataoffset": 329,
+    "filesource_id": 0,
+    "global_encoding": 0,
+    "global_encoding_base64": "AAA=",
+    "header_size": 227,
+    "major_version": 1,
+    "maxx": 280999.99,
+    "maxy": 1552669.86,
+    "maxz": 262.28,
+    "minor_version": 2,
+    "minx": 280427.5,
+    "miny": 1552000,
+    "minz": 46.3,
+    "offset_x": 0,
+    "offset_y": 0,
+    "offset_z": 0,
+    "point_length": 28,
+    "project_id": "00000000-0000-0000-0000-000000000000",
+    "scale_x": 0.01,
+    "scale_y": 0.01,
+    "scale_z": 0.01,
+    "software_id": "TerraScan",
+    "spatialreference": "",
+    "srs":
+    {
+      "compoundwkt": "",
+      "horizontal": "",
+      "isgeocentric": false,
+      "isgeographic": false,
+      "prettycompoundwkt": "",
+      "prettywkt": "",
+      "proj4": "",
+      "units":
+      {
+        "horizontal": "unknown",
+        "vertical": ""
+      },
+      "vertical": "",
+      "wkt": ""
+    },
+    "system_id": "",
+    "vlr_0":
+    {
+      "data": "AgAAAAICAAAAAAAAUMMAAP////////////////////8CAAYAFAACAAcACAACAA==",
+      "description": "by laszip of LAStools (150202)",
+      "record_id": 22204,
+      "user_id": "laszip encoded"
+    }
+  },
+  "pdal_version": "2.0.1 (git-version: 6600e6)"
+}

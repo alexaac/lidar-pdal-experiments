@@ -1,0 +1,161 @@
+(new_clouds) myuser@comp:~/phili$ entwine build -i raw_data/*.laz -o ept_phili --srs "EPSG:32651"
+Scanning input
+1/35: raw_data/E280N1553_LAZ_PL1.laz
+2/35: raw_data/E281N1547_LAZ_PL1.laz
+3/35: raw_data/E281N1548_LAZ_PL1.laz
+4/35: raw_data/E281N1549_LAZ_PL1.laz
+5/35: raw_data/E281N1550_LAZ_PL1.laz
+6/35: raw_data/E281N1551_LAZ_PL1.laz
+7/35: raw_data/E281N1552_LAZ_PL1.laz
+8/35: raw_data/E281N1553_LAZ_PL1.laz
+9/35: raw_data/E282N1547_LAZ_PL1.laz
+10/35: raw_data/E282N1548_LAZ_PL1.laz
+11/35: raw_data/E282N1549_LAZ_PL1.laz
+12/35: raw_data/E282N1550_LAZ_PL1.laz
+13/35: raw_data/E282N1551_LAZ_PL1.laz
+14/35: raw_data/E282N1552_LAZ_PL1.laz
+15/35: raw_data/E282N1553_LAZ_PL1.laz
+16/35: raw_data/E283N1548_LAZ_PL1.laz
+17/35: raw_data/E283N1549_LAZ_PL1.laz
+18/35: raw_data/E283N1550_LAZ_PL1.laz
+19/35: raw_data/E283N1551_LAZ_PL1.laz
+20/35: raw_data/E283N1552_LAZ_PL1.laz
+21/35: raw_data/E283N1553_LAZ_PL1.laz
+22/35: raw_data/E284N1548_LAZ_PL1.laz
+23/35: raw_data/E284N1549_LAZ_PL1.laz
+24/35: raw_data/E284N1550_LAZ_PL1.laz
+25/35: raw_data/E284N1551_LAZ_PL1.laz
+26/35: raw_data/E284N1552_LAZ_PL1.laz
+27/35: raw_data/E284N1553_LAZ_PL1.laz
+28/35: raw_data/E285N1548_LAZ_PL1.laz
+29/35: raw_data/E285N1549_LAZ_PL1.laz
+30/35: raw_data/E285N1550_LAZ_PL1.laz
+31/35: raw_data/E285N1551_LAZ_PL1.laz
+32/35: raw_data/E285N1552_LAZ_PL1.laz
+33/35: raw_data/E285N1553_LAZ_PL1.laz
+34/35: raw_data/E285N1554_LAZ_PL1.laz
+35/35: raw_data/E286N1551_LAZ_PL1.laz
+
+Entwine Version: 2.1.0
+EPT Version: 1.0.0
+Input:
+	Files: 35
+	Total points: 172,148,957
+	Density estimate (per square unit): 5.43294
+	Threads: [3, 5]
+Output:
+	Path: ept_phili/
+	Data type: laszip
+	Hierarchy type: json
+	Sleep count: 2,097,152
+	Scale: 0.01
+	Offset: (283714, 1550170, 120)
+Metadata:
+	SRS: EPSG:32651
+	Bounds: [(280427, 1546340, -140), (287000, 1554000, 380)]
+	Cube: [(279883, 1546339, -3711), (287545, 1554001, 3951)]
+	Storing dimensions: [
+                X:int32, Y:int32, Z:int32, Intensity:uint16, ReturnNumber:uint8,
+                NumberOfReturns:uint8, ScanDirectionFlag:uint8,
+                EdgeOfFlightLine:uint8, Classification:uint8, ScanAngleRank:float,
+                UserData:uint8, PointSourceId:uint16, GpsTime:double, OriginId:uint32
+	]
+Build parameters:
+	Span: 128
+	Resolution 2D: 128 * 128 = 16,384
+	Resolution 3D: 128 * 128 * 128 = 2,097,152
+	Maximum node size: 65,536
+	Minimum node size: 16,384
+	Cache size: 64
+
+Adding 0 - raw_data/E280N1553_LAZ_PL1.laz
+Adding 1 - raw_data/E281N1547_LAZ_PL1.laz
+Adding 2 - raw_data/E281N1548_LAZ_PL1.laz
+Adding 3 - raw_data/E281N1549_LAZ_PL1.laz
+Adding 4 - raw_data/E281N1550_LAZ_PL1.laz
+	Done 0
+Adding 5 - raw_data/E281N1551_LAZ_PL1.laz
+	Done 1
+Adding 6 - raw_data/E281N1552_LAZ_PL1.laz
+	Done 2
+Adding 7 - raw_data/E281N1553_LAZ_PL1.laz
+00:10 - 10% - 16,730,384 - 6,022(6,022)M/h - 122W - 5R - 334A
+	Done 3
+Adding 8 - raw_data/E282N1547_LAZ_PL1.laz
+	Done 4
+Adding 9 - raw_data/E282N1548_LAZ_PL1.laz
+00:20 - 19% - 32,115,196 - 5,780(5,538)M/h - 409W - 28R - 369A
+	Done 5
+Adding 10 - raw_data/E282N1549_LAZ_PL1.laz
+	Done 8
+Adding 11 - raw_data/E282N1550_LAZ_PL1.laz
+	Done 6
+Adding 12 - raw_data/E282N1551_LAZ_PL1.laz
+	Done 7
+Adding 13 - raw_data/E282N1552_LAZ_PL1.laz
+00:30 - 26% - 45,330,267 - 5,439(4,757)M/h - 437W - 60R - 335A
+	Done 9
+Adding 14 - raw_data/E282N1553_LAZ_PL1.laz
+00:40 - 34% - 59,255,561 - 5,333(5,013)M/h - 435W - 72R - 351A
+	Done 10
+Adding 15 - raw_data/E283N1548_LAZ_PL1.laz
+	Done 11
+Adding 16 - raw_data/E283N1549_LAZ_PL1.laz
+	Done 14
+Adding 17 - raw_data/E283N1550_LAZ_PL1.laz
+00:50 - 43% - 73,172,066 - 5,268(5,009)M/h - 375W - 54R - 383A
+	Done 12
+Adding 18 - raw_data/E283N1551_LAZ_PL1.laz
+	Done 15
+Adding 19 - raw_data/E283N1552_LAZ_PL1.laz
+	Done 13
+Adding 20 - raw_data/E283N1553_LAZ_PL1.laz
+01:00 - 50% - 86,871,954 - 5,212(4,931)M/h - 519W - 64R - 267A
+	Done 17
+Adding 21 - raw_data/E284N1548_LAZ_PL1.laz
+	Done 16
+Adding 22 - raw_data/E284N1549_LAZ_PL1.laz
+01:10 - 59% - 101,289,352 - 5,209(5,190)M/h - 395W - 41R - 286A
+	Done 18
+Adding 23 - raw_data/E284N1550_LAZ_PL1.laz
+	Done 21
+Adding 24 - raw_data/E284N1551_LAZ_PL1.laz
+	Done 20
+Adding 25 - raw_data/E284N1552_LAZ_PL1.laz
+	Done 19
+Adding 26 - raw_data/E284N1553_LAZ_PL1.laz
+01:20 - 67% - 115,187,943 - 5,183(5,003)M/h - 448W - 71R - 265A
+	Done 23
+Adding 27 - raw_data/E285N1548_LAZ_PL1.laz
+	Done 22
+Adding 28 - raw_data/E285N1549_LAZ_PL1.laz
+01:30 - 75% - 129,260,740 - 5,170(5,066)M/h - 489W - 69R - 245A
+	Done 24
+Adding 29 - raw_data/E285N1550_LAZ_PL1.laz
+	Done 27
+Adding 30 - raw_data/E285N1551_LAZ_PL1.laz
+	Done 26
+Adding 31 - raw_data/E285N1552_LAZ_PL1.laz
+01:40 - 84% - 143,799,941 - 5,176(5,234)M/h - 356W - 68R - 335A
+	Done 28
+Adding 32 - raw_data/E285N1553_LAZ_PL1.laz
+	Done 25
+Adding 33 - raw_data/E285N1554_LAZ_PL1.laz
+	Done 29
+Adding 34 - raw_data/E286N1551_LAZ_PL1.laz
+01:50 - 92% - 157,579,245 - 5,157(4,960)M/h - 454W - 58R - 310A
+	Done 30
+	Pushes complete - joining...
+	Done 31
+02:00 - 99% - 170,642,287 - 5,119(4,702)M/h - 437W - 71R - 237A
+	Done 34
+	Done 32
+	Done 33
+Reawakened: 661
+Saving registry...
+Saving metadata...
+
+Index completed in 02:04.
+Save complete.
+	Points inserted: 172,148,957
+(new_clouds) myuser@comp:~/phili$

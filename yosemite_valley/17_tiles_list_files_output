@@ -1,0 +1,18 @@
+(new_clouds) myuser@comp:~/yose$ ls -la raw_data/*.las
+-rwxrwxrwx 1 myuser myuser 4858578967 dec 20 11:25 raw_data/points_extra_yose.las
+-rwxrwxrwx 1 myuser myuser  838430789 dec 20 22:33 raw_data/points_little_yose.las
+-rw-r--r-- 1 myuser myuser  838430703 feb 19 20:58 raw_data/points_little_yose_nad83.las
+-rwxrwxrwx 1 myuser myuser 3853695669 nov 29 17:54 raw_data/points_rockfall_1.las
+-rwxrwxrwx 1 myuser myuser 4627696169 nov 29 19:28 raw_data/points_rockfall_2.las
+(new_clouds) myuser@comp:~/yose$ mkdir -pv las_files
+mkdir: created directory 'las_files'
+(new_clouds) myuser@comp:~/yose$ mv raw_data/points_little_yose_nad83.las raw_data/points_extra_yose.las raw_data/points_rockfall_1.las raw_data/points_rockfall_2.las las_files
+(new_clouds) myuser@comp:~/yose$ ls -la las_files
+total 13846136
+drwxr-xr-x 2 myuser myuser       4096 feb 19 21:14 .
+drwxr-xr-x 7 myuser myuser       4096 feb 19 21:13 ..
+-rwxrwxrwx 1 myuser myuser 4858578967 dec 20 11:25 points_extra_yose.las
+-rw-r--r-- 1 myuser myuser  838430703 feb 19 20:58 points_little_yose_nad83.las
+-rwxrwxrwx 1 myuser myuser 3853695669 nov 29 17:54 points_rockfall_1.las
+-rwxrwxrwx 1 myuser myuser 4627696169 nov 29 19:28 points_rockfall_2.las
+(new_clouds) myuser@comp:~/yose$

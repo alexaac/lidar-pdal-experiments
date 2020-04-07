@@ -1,0 +1,1 @@
+entwine build -i raw_data/*.laz -o ept_yose --srs "EPSG:26911"

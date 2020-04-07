@@ -1,0 +1,80 @@
+(new_clouds) myuser@comp:~/yose$ pdal info raw_data/points_little_yose.las -p 0
+{
+  "filename": "raw_data/points_little_yose.las",
+  "pdal_version": "2.0.1 (git-version: 6600e6)",
+  "points":
+  {
+    "point":
+    {
+      "Blue": 0,
+      "Classification": 1,
+      "EdgeOfFlightLine": 0,
+      "GpsTime": 397906.1493,
+      "Green": 0,
+      "Intensity": 0,
+      "NumberOfReturns": 1,
+      "PointId": 0,
+      "PointSourceId": 0,
+      "Red": 0,
+      "ReturnNumber": 1,
+      "ScanAngleRank": 28,
+      "ScanDirectionFlag": 0,
+      "UserData": 32,
+      "X": 278287.53,
+      "Y": 4179655.54,
+      "Z": 1986.66
+    }
+  }
+}
+(new_clouds) myuser@comp:~/yose$ pdal info raw_data/points_extra_yose.las -p 0
+
+{
+  "filename": "raw_data/points_extra_yose.las",
+  "pdal_version": "2.0.1 (git-version: 6600e6)",
+  "points":
+  {
+    "point":
+    {
+      "Classification": 1,
+      "EdgeOfFlightLine": 0,
+      "Intensity": 0,
+      "NumberOfReturns": 1,
+      "PointId": 0,
+      "PointSourceId": 0,
+      "ReturnNumber": 1,
+      "ScanAngleRank": 0,
+      "ScanDirectionFlag": 0,
+      "UserData": 0,
+      "X": 266398.74,
+      "Y": 4180473.61,
+      "Z": 2261.31
+    }
+  }
+}
+(new_clouds) myuser@comp:~/yose$ pdal info raw_data/points_rockfall_1.las -p 0
+
+{
+  "filename": "raw_data/points_rockfall_1.las",
+  "pdal_version": "2.0.1 (git-version: 6600e6)",
+  "points":
+  {
+    "point":
+    {
+      "Classification": 12,
+      "EdgeOfFlightLine": 0,
+      "GpsTime": 502909.1808,
+      "Intensity": 17,
+      "NumberOfReturns": 3,
+      "PointId": 0,
+      "PointSourceId": 3,
+      "ReturnNumber": 3,
+      "ScanAngleRank": -18,
+      "ScanDirectionFlag": 0,
+      "UserData": 32,
+      "X": 272126.59,
+      "Y": 4182001.04,
+      "Z": 1663.82
+    }
+  }
+}
+(new_clouds) myuser@comp:~/yose$

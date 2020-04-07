@@ -1,0 +1,89 @@
+(new_clouds) myuser@comp:~/phili$ pdal pipeline entwine.json -v 7
+(PDAL Debug) Debugging...
+(pdal pipeline readers.ept Debug) Endpoint: ept_phili/
+Got EPT info
+SRS: PROJCS["WGS 84 / UTM zone 51N",
+    GEOGCS["WGS 84",
+        DATUM["WGS_1984",
+            SPHEROID["WGS 84",6378137,298.257223563,
+                AUTHORITY["EPSG","7030"]],
+            AUTHORITY["EPSG","6326"]],
+        PRIMEM["Greenwich",0,
+            AUTHORITY["EPSG","8901"]],
+        UNIT["degree",0.0174532925199433,
+            AUTHORITY["EPSG","9122"]],
+        AUTHORITY["EPSG","4326"]],
+    PROJECTION["Transverse_Mercator"],
+    PARAMETER["latitude_of_origin",0],
+    PARAMETER["central_meridian",123],
+    PARAMETER["scale_factor",0.9996],
+    PARAMETER["false_easting",500000],
+    PARAMETER["false_northing",0],
+    UNIT["metre",1,
+        AUTHORITY["EPSG","9001"]],
+    AXIS["Easting",EAST],
+    AXIS["Northing",NORTH],
+    AUTHORITY["EPSG","32651"]]
+Root resolution: 59.8594
+Query resolution:  5
+Actual resolution: 3.74121
+Depth end: 5
+Query bounds: ([-1.797693134862316e+308, 1.797693134862316e+308], [-1.797693134862316e+308, 1.797693134862316e+308], [-1.797693134862316e+308, 1.797693134862316e+308])
+Threads: 4
+(pdal pipeline readers.ept Debug) Registering dim X: double
+(pdal pipeline readers.ept Debug) Registering dim Y: double
+(pdal pipeline readers.ept Debug) Registering dim Z: double
+(pdal pipeline readers.ept Debug) Registering dim Intensity: uint16_t
+(pdal pipeline readers.ept Debug) Registering dim ReturnNumber: uint8_t
+(pdal pipeline readers.ept Debug) Registering dim NumberOfReturns: uint8_t
+(pdal pipeline readers.ept Debug) Registering dim ScanDirectionFlag: uint8_t
+(pdal pipeline readers.ept Debug) Registering dim EdgeOfFlightLine: uint8_t
+(pdal pipeline readers.ept Debug) Registering dim Classification: uint8_t
+(pdal pipeline readers.ept Debug) Registering dim ScanAngleRank: float
+(pdal pipeline readers.ept Debug) Registering dim UserData: uint8_t
+(pdal pipeline readers.ept Debug) Registering dim PointSourceId: uint16_t
+(pdal pipeline readers.ept Debug) Registering dim GpsTime: double
+(pdal pipeline readers.ept Debug) Registering dim OriginId: uint32_t
+(pdal pipeline Debug) Executing pipeline in stream mode.
+(pdal pipeline readers.ept Debug) Overlap nodes: 309
+(pdal pipeline readers.ept Debug) Overlap points: 8215660
+(pdal pipeline readers.ept Debug) Streaming Data 1/309: 0-0-0-0
+(pdal pipeline readers.ept Debug) Points : 12614
+[...]
+(pdal pipeline readers.ept Debug) Streaming Data 309/309: 4-14-9-7
+(pdal pipeline readers.ept Debug) Points : 56730
+(pdal pipeline writers.las Debug) Wrote 8215660 points to the LAS file
+(new_clouds) myuser@comp:~/phili$ pdal info temp_data/ept_phili_to_laz.laz | jq .stats.bbox.native.bbox
+{
+  "maxx": 286999.99,
+  "maxy": 1553999.99,
+  "maxz": 379.23,
+  "minx": 280427.84,
+  "miny": 1546340.11,
+  "minz": -139.2
+}
+(new_clouds) myuser@comp:~/phili$ pdal info temp_data/ept_phili_to_laz.laz -p 0
+{
+  "filename": "temp_data/ept_phili_to_laz.laz",
+  "pdal_version": "2.0.1 (git-version: 6600e6)",
+  "points":
+  {
+    "point":
+    {
+      "Classification": 14,
+      "EdgeOfFlightLine": 1,
+      "Intensity": 1,
+      "NumberOfReturns": 1,
+      "PointId": 0,
+      "PointSourceId": 1010,
+      "ReturnNumber": 1,
+      "ScanAngleRank": 14,
+      "ScanDirectionFlag": 0,
+      "UserData": 0,
+      "X": 285540.57,
+      "Y": 1553975.03,
+      "Z": 49.87
+    }
+  }
+}
+(new_clouds) myuser@comp:~/phili$

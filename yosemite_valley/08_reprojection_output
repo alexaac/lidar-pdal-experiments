@@ -1,0 +1,45 @@
+(new_clouds) myuser@comp:~/yose$ pdal translate raw_data/points_little_yose.laz \
+>     temp_data/points_little_yose_wgs84.laz reprojection \
+>     --filters.reprojection.in_srs="EPSG:32611" \
+>     --filters.reprojection.out_srs="EPSG:4326"
+
+(new_clouds) myuser@comp:~/yose$ pdal info temp_data/points_little_yose_wgs84.laz --all | jq .stats.bbox.native.bbox
+
+{
+  "maxx": -119.44,
+  "maxy": 37.76,
+  "maxz": 2906.56,
+  "minx": -119.53,
+  "miny": 37.73,
+  "minz": 1853.19
+}
+(new_clouds) myuser@comp:~/yose$ pdal info temp_data/points_little_yose_wgs84.laz -p 0
+{
+  "filename": "temp_data/points_little_yose_wgs84.laz",
+  "pdal_version": "2.0.1 (git-version: 6600e6)",
+  "points":
+  {
+    "point":
+    {
+      "Blue": 0,
+      "Classification": 1,
+      "EdgeOfFlightLine": 0,
+      "GpsTime": 397906.1493,
+      "Green": 0,
+      "Intensity": 0,
+      "NumberOfReturns": 1,
+      "PointId": 0,
+      "PointSourceId": 0,
+      "Red": 0,
+      "ReturnNumber": 1,
+      "ScanAngleRank": 28,
+      "ScanDirectionFlag": 0,
+      "UserData": 32,
+      "X": -119.52,
+      "Y": 37.74,
+      "Z": 1986.66
+    }
+  }
+}
+(new_clouds) myuser@comp:~/yose$ 
+(new_clouds) myuser@comp:~/yose$

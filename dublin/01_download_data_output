@@ -1,0 +1,17 @@
+[...]
+
+wget --no-check-certificate https://archive.nyu.edu/retrieve/79848/nyu_2451_38601_pc_T_315500_234000.zip
+--2020-03-04 18:24:22--  https://archive.nyu.edu/retrieve/79848/nyu_2451_38601_pc_T_315500_234000.zip
+Resolving archive.nyu.edu (archive.nyu.edu)... 128.122.108.142
+Connecting to archive.nyu.edu (archive.nyu.edu)|128.122.108.142|:443... connected.
+WARNING: cannot verify archive.nyu.edu's certificate, issued by ‘CN=InCommon RSA Server CA,OU=InCommon,O=Internet2,L=Ann Arbor,ST=MI,C=US’:
+  Unable to locally verify the issuer's authority.
+HTTP request sent, awaiting response... 200 OK
+Length: 410650750 (392M) [application/octet-stream]
+Saving to: ‘nyu_2451_38601_pc_T_315500_234000.zip’
+
+nyu_2451_38601_pc_T_315500_234 100%[==================================================>] 391,63M  8,62MB/s    in 34s     
+
+2020-03-04 18:24:56 (11,5 MB/s) - ‘nyu_2451_38601_pc_T_315500_234000.zip’ saved [410650750/410650750]
+
+[...]

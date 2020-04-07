@@ -1,0 +1,1 @@
+pdal info temp_data/ept_yose_to_laz.laz --boundary

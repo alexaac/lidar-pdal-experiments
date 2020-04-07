@@ -1,0 +1,6 @@
+(new_clouds) myuser@comp:~/dublin$ pdal pipeline classification.json -v 3
+(PDAL Debug) Debugging...
+(pdal pipeline Debug) Executing pipeline in stream mode.
+(new_clouds) myuser@comp:~/dublin$ du -h temp_data/dublin-classification.tif
+2,9M	temp_data/dublin-classification.tif
+(new_clouds) myuser@comp:~/dublin$

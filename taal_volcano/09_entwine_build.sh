@@ -1,0 +1,1 @@
+entwine build -i raw_data/*.laz -o ept_phili --srs "EPSG:32651"

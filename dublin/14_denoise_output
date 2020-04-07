@@ -1,0 +1,7 @@
+(new_clouds) myuser@comp:~/dublin$ pdal pipeline denoise.json
+proj_create_from_database: datum not found
+proj_create_from_database: ellipsoid not found
+proj_create_from_database: prime meridian not found
+(new_clouds) myuser@comp:~/dublin$ ls -lah temp_data/clean.laz 
+-rw-r--r-- 1 myuser myuser 246M mar  6 00:38 temp_data/clean.laz
+(new_clouds) myuser@comp:~/dublin$

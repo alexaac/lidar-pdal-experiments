@@ -1,0 +1,9 @@
+(new_clouds) myuser@comp:~/dublin$ pdal pipeline colorize_folder.json 
+proj_create_from_database: datum not found
+proj_create_from_database: ellipsoid not found
+proj_create_from_database: prime meridian not found
+[...]
+(new_clouds) myuser@comp:~/dublin$ vim colorize_folder.json 
+(new_clouds) myuser@comp:~/dublin$ ls -lah temp_data/dublin-colored.laz
+-rw-r--r-- 1 myuser myuser 2,7G mar  5 20:09 temp_data/dublin-colored.laz
+(new_clouds) myuser@comp:~/dublin$

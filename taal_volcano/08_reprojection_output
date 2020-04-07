@@ -1,0 +1,42 @@
+(new_clouds) myuser@comp:~/phili$ pdal translate raw_data/E280N1553_LAZ_PL1.laz \
+>     temp_data/E280N1553_LAZ_PL1_WGS.laz reprojection \
+>     --filters.reprojection.in_srs="EPSG:32651" \
+>     --filters.reprojection.out_srs="EPSG:4326"
+(new_clouds) myuser@comp:~/phili$ pdal info temp_data/E280N1553_LAZ_PL1_WGS.laz --all | jq .stats.bbox.native.bbox
+{
+  "maxx": 120.97,
+  "maxy": 14.04,
+  "maxz": 262.28,
+  "minx": 120.97,
+  "miny": 14.03,
+  "minz": 46.3
+}
+(new_clouds) myuser@comp:~/phili$ pdal info temp_data/E280N1553_LAZ_PL1_WGS.laz -p 0
+{
+  "filename": "temp_data/E280N1553_LAZ_PL1_WGS.laz",
+  "pdal_version": "2.0.1 (git-version: 6600e6)",
+  "points":
+  {
+    "point":
+    {
+      "Blue": 0,
+      "Classification": 1,
+      "EdgeOfFlightLine": 0,
+      "GpsTime": 270635.4339,
+      "Green": 0,
+      "Intensity": 15,
+      "NumberOfReturns": 1,
+      "PointId": 0,
+      "PointSourceId": 1010,
+      "Red": 0,
+      "ReturnNumber": 1,
+      "ScanAngleRank": -26,
+      "ScanDirectionFlag": 0,
+      "UserData": 0,
+      "X": 120.97,
+      "Y": 14.04,
+      "Z": 260.8
+    }
+  }
+}
+(new_clouds) myuser@comp:~/phili$

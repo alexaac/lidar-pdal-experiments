@@ -1,0 +1,30 @@
+(new_clouds) myuser@comp:~/dublin$ mkdir -pv laz_tiles
+(new_clouds) myuser@comp:~/dublin$ # Create the tiles from all files in the specified folder
+(new_clouds) myuser@comp:~/dublin$ pdal tile -i "temp_data/dublin-colored.laz" \
+>           -o "laz_tiles/dublin_#.laz" \
+>           --buffer="20" \
+>           --out_srs="EPSG:29902"
+(new_clouds) myuser@comp:~/dublin$ # List the files in the newly created folder
+(new_clouds) myuser@comp:~/dublin$ ls -la laz_tiles | head -10
+total 3006672
+drwxr-xr-x 2 myuser myuser       4096 mar  6 01:10 .
+drwxrwxr-x 8 myuser myuser       4096 mar  6 00:54 ..
+-rw-r--r-- 1 myuser myuser 2081807749 mar  6 01:14 dublin_0_0.laz
+-rw-r--r-- 1 myuser myuser   40442660 mar  6 01:14 dublin_0_-1.laz
+-rw-r--r-- 1 myuser myuser   31597905 mar  6 01:14 dublin_0_1.laz
+-rw-r--r-- 1 myuser myuser  863749935 mar  6 01:14 dublin_-1_0.laz
+-rw-r--r-- 1 myuser myuser   37421064 mar  6 01:14 dublin_1_0.laz
+-rw-r--r-- 1 myuser myuser   12858789 mar  6 01:14 dublin_-1_-1.laz
+-rw-r--r-- 1 myuser myuser    9801056 mar  6 01:14 dublin_-1_1.laz
+(new_clouds) myuser@comp:~/dublin$ ls -la laz_tiles | tail -10
+drwxrwxr-x 8 myuser myuser       4096 mar  6 00:54 ..
+-rw-r--r-- 1 myuser myuser 2081807749 mar  6 01:14 dublin_0_0.laz
+-rw-r--r-- 1 myuser myuser   40442660 mar  6 01:14 dublin_0_-1.laz
+-rw-r--r-- 1 myuser myuser   31597905 mar  6 01:14 dublin_0_1.laz
+-rw-r--r-- 1 myuser myuser  863749935 mar  6 01:14 dublin_-1_0.laz
+-rw-r--r-- 1 myuser myuser   37421064 mar  6 01:14 dublin_1_0.laz
+-rw-r--r-- 1 myuser myuser   12858789 mar  6 01:14 dublin_-1_-1.laz
+-rw-r--r-- 1 myuser myuser    9801056 mar  6 01:14 dublin_-1_1.laz
+-rw-r--r-- 1 myuser myuser     454185 mar  6 01:14 dublin_1_-1.laz
+-rw-r--r-- 1 myuser myuser     637080 mar  6 01:14 dublin_1_1.laz
+(new_clouds) myuser@comp:~/dublin$

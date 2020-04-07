@@ -1,0 +1,17 @@
+{
+    "pipeline":[
+        {
+            "type":"readers.ept",
+            "filename":"ept_phili",
+            "resolution": 5
+        },
+        {
+            "type":"writers.gdal",
+            "filename":"temp_data/phili-classification.tif",
+            "dimension":"Classification",
+            "data_type":"uint16_t",
+            "output_type":"mean",
+            "resolution": 5
+        }
+    ]
+}

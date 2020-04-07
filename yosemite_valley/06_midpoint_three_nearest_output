@@ -1,0 +1,69 @@
+(new_clouds) myuser@comp:~/yose$ pdal info raw_data/points_little_yose.las --query "277177.53, 4180183.58, 2379.875/3"
+{
+  "filename": "raw_data/points_little_yose.las",
+  "pdal_version": "2.0.1 (git-version: 6600e6)",
+  "points":
+  {
+    "point":
+    [
+      {
+        "Blue": 0,
+        "Classification": 1,
+        "EdgeOfFlightLine": 0,
+        "GpsTime": 398668.7963,
+        "Green": 0,
+        "Intensity": 0,
+        "NumberOfReturns": 2,
+        "PointId": 15481196,
+        "PointSourceId": 0,
+        "Red": 0,
+        "ReturnNumber": 1,
+        "ScanAngleRank": 22,
+        "ScanDirectionFlag": 0,
+        "UserData": 32,
+        "X": 281470.21,
+        "Y": 4179214.96,
+        "Z": 2906.56
+      },
+      {
+        "Blue": 0,
+        "Classification": 1,
+        "EdgeOfFlightLine": 0,
+        "GpsTime": 398883.1897,
+        "Green": 0,
+        "Intensity": 41,
+        "NumberOfReturns": 1,
+        "PointId": 15647573,
+        "PointSourceId": 0,
+        "Red": 0,
+        "ReturnNumber": 1,
+        "ScanAngleRank": -8,
+        "ScanDirectionFlag": 0,
+        "UserData": 32,
+        "X": 280394.17,
+        "Y": 4181634.48,
+        "Z": 2632.03
+      },
+      {
+        "Blue": 0,
+        "Classification": 1,
+        "EdgeOfFlightLine": 0,
+        "GpsTime": 398883.1897,
+        "Green": 0,
+        "Intensity": 35,
+        "NumberOfReturns": 1,
+        "PointId": 15647574,
+        "PointSourceId": 0,
+        "Red": 0,
+        "ReturnNumber": 1,
+        "ScanAngleRank": -8,
+        "ScanDirectionFlag": 0,
+        "UserData": 32,
+        "X": 280394.77,
+        "Y": 4181634.46,
+        "Z": 2631.94
+      }
+    ]
+  }
+}
+(new_clouds) myuser@comp:~/yose$

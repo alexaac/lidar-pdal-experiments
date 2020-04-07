@@ -1,0 +1,20 @@
+(new_clouds) myuser@comp:~/yose$ tree ept_yose/
+ept_yose/
+├── ept-build.json
+├── ept-data
+│   ├── 0-0-0-0.laz
+│   ├── 1-0-0-0.laz
+│   ├── 1-0-0-1.laz
+[...]
+│   ├── 9-314-267-269.laz
+│   ├── 9-314-281-255.laz
+│   └── 9-314-326-252.laz
+├── ept-hierarchy
+│   └── 0-0-0-0.json
+├── ept.json
+└── ept-sources
+    ├── 0.json
+    └── list.json
+
+3 directories, 12972 files
+(new_clouds) myuser@comp:~/yose$

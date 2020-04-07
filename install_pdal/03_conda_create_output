@@ -1,0 +1,24 @@
+Output
+(base) myuser@comp:~/phili$ conda create --name new_clouds
+Collecting package metadata (current_repodata.json): done
+Solving environment: done
+
+## Package Plan ##
+
+  environment location: /home/myuser/anaconda3/envs/new_clouds
+
+Proceed ([y]/n)? y
+
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+#
+# To activate this environment, use
+#
+#     $ conda activate new_clouds
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+(base) myuser@comp:~/phili$ conda activate new_clouds
+(new_clouds) myuser@comp:~/phil$
