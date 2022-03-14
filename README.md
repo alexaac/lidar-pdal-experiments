@@ -1,3 +1,5 @@
+[![SWUbanner](https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/banner2-direct.svg)](https://github.com/vshymanskyy/StandWithUkraine/blob/main/docs/README.md)
+
 # LiDAR PDAL Experiments
 
 <p>Those are my <strong><em>notes</em></strong> on taking some <strong>LiDAR</strong> data and testing different commands in PDAL. If you like, you can follow along using your own data.</p>
